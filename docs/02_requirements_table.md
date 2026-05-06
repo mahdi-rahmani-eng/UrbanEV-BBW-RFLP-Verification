@@ -1,0 +1,16 @@
+# Requirements Table
+
+This project uses testable requirements to connect vehicle concept design, concept-level brake-request logic, actuator selection, and MATLAB-based verification.
+
+| Requirement ID | Requirement | Verification Method |
+|---|---|---|
+| REQ-VEH-01 | The vehicle concept shall remain within a low-speed urban operating envelope not exceeding 50 km/h. | Concept data review |
+| REQ-VEH-02 | The selected vehicle concept shall provide an estimated range of at least 40 km under simplified urban operating assumptions. | MATLAB range model |
+| REQ-VEH-03 | The selected vehicle concept shall be chosen using a documented weighted decision matrix. | Concept-selection result |
+| REQ-BBW-01 | The emergency brake-request logic shall calculate stopping distance using ego speed, road friction, and actuator-delay assumptions. | MATLAB scenario simulation |
+| REQ-BBW-02 | The emergency brake-request logic shall calculate TTC using target distance and relative speed. | MATLAB scenario simulation |
+| REQ-BBW-03 | The warning logic shall classify risk into SAFE, CAUTION, WARNING, and EMERGENCY_BRAKE according to defined thresholds. | Warning-state verification |
+| REQ-BBW-04 | The logic shall generate brake_request = 1 only when the warning state is EMERGENCY_BRAKE. | Scenario verification |
+| REQ-BBW-05 | The verification shall show the effect of actuator delay on stopping distance and risk classification. | Delay-sensitive scenario |
+| REQ-BBW-06 | The actuator concept shall be selected using documented weighted criteria. | Actuator-selection table |
+| REQ-BBW-07 | Each major requirement shall be traceable to functions, logical blocks, physical elements, and verification scenarios. | Traceability matrix |

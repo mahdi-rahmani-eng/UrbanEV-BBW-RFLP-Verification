@@ -1,0 +1,4 @@
+actuator_id,concept,feasibility,response_time,integration_simplicity,cost_complexity,low_speed_ev_suitability,total_score,decision
+A1,Electromechanical brake actuator,6,8,5,4,7,6.1,Not selected
+A2,Electro-hydraulic brake actuator,8,8,8,7,8,7.85,Selected
+A3,Conventional hydraulic brake with electronic actuation interface,9,6,9,8,6,7.8,Not selected

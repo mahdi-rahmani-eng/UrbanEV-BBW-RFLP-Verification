@@ -1,0 +1,4 @@
+concept_id,description,battery_kwh,motor_kw,mass_kg,max_speed_kmh,CdA,Crr,feasibility_score
+C1,Campus-focused lightweight EV,6,8,520,30,0.75,0.012,8
+C2,Balanced low-speed urban EV,9,12,650,45,0.8,0.013,9
+C3,Extended urban EV,12,18,780,50,0.85,0.014,7

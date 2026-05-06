@@ -1,0 +1,7 @@
+scenario_id,description,ego_speed_kmh,target_distance_m,relative_speed_kmh,road_condition,mu,actuator_delay_s,expected_state
+SCN-01,Normal following,20,25,5,Dry,0.75,0.2,SAFE
+SCN-02,Close but not critical target,30,10,10,Dry,0.75,0.2,CAUTION
+SCN-03,High closing risk,30,8,15,Dry,0.75,0.2,WARNING
+SCN-04,Wet-road warning case,30,9,15,Wet,0.45,0.2,WARNING
+SCN-05,Sudden stationary obstacle,40,10,40,Dry,0.75,0.2,EMERGENCY_BRAKE
+SCN-06,Delay-sensitive wet case,30,8.8,10,Wet,0.45,0.2,WARNING

@@ -1,0 +1,11 @@
+requirement_id,function_id,logical_block_id,physical_or_concept_element,scenario_or_test
+REQ-VEH-01,"F1","L1","P1",Concept data review
+REQ-VEH-02,"F2","L2","P1",Range model
+REQ-VEH-03,"F2","L1","P1",Decision matrix
+REQ-BBW-01,"F3, F7","L3, L7","P2, P5, P7",SCN-01 to SCN-06
+REQ-BBW-02,"F4","L4","P4, P7",SCN-01 to SCN-06
+REQ-BBW-03,"F5","L5","P6, P7",SCN-01 to SCN-06
+REQ-BBW-04,"F6","L6","P2, P5, P7",SCN-05
+REQ-BBW-05,"F7","L7","P5, P7",SCN-06
+REQ-BBW-06,"F8","L8","P5",Actuator selection
+REQ-BBW-07,"F9","L9","P7",Traceability review

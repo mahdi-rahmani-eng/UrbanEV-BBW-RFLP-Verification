@@ -1,0 +1,7 @@
+scenario_id,description,ego_speed_kmh,target_distance_m,relative_speed_kmh,road_condition,mu,actuator_delay_s,expected_state,stopping_distance_m,ttc_s,warning_state,brake_request,verification_result,verification_comment
+SCN-01,Normal following,20,25,5,Dry,0.75,0.2,SAFE,3.20857611490752,18,SAFE,0,Pass,Warning state follows the defined threshold logic.
+SCN-02,Close but not critical target,30,10,10,Dry,0.75,0.2,CAUTION,6.38596292520859,3.6,CAUTION,0,Pass,Warning state follows the defined threshold logic.
+SCN-03,High closing risk,30,8,15,Dry,0.75,0.2,WARNING,6.38596292520859,1.92,WARNING,0,Pass,Warning state follows the defined threshold logic.
+SCN-04,Wet-road warning case,30,9,15,Wet,0.45,0.2,WARNING,9.53216043090321,2.16,WARNING,0,Pass,Warning state follows the defined threshold logic.
+SCN-05,Sudden stationary obstacle,40,10,40,Dry,0.75,0.2,EMERGENCY_BRAKE,10.6120822374079,0.9,EMERGENCY_BRAKE,1,Pass,Warning state follows the defined threshold logic.
+SCN-06,Delay-sensitive wet case,30,8.8,10,Wet,0.45,0.2,WARNING,9.53216043090321,3.168,WARNING,0,Pass,Warning state follows the defined threshold logic.
