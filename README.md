@@ -1,5 +1,4 @@
-readmeLines = readlines("README.md");
-sum(strcmp(strtrim(readmeLines), "## Future Work"))# UrbanEV-BBW-RFLP-Verification
+# UrbanEV-BBW-RFLP-Verification
 
 ## Lightweight MBSE/RFLP Concept Design and MATLAB-Based Verification of Concept-Level Brake-by-Wire Emergency Brake-Request Logic for a Low-Speed Urban EV
 
