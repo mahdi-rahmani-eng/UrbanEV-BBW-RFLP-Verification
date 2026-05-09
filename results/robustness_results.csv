@@ -1,0 +1,5 @@
+case_id,case_name,expected_state,total_samples,expected_count,expected_rate_percent,emergency_brake_rate_percent,false_emergency_rate_percent,dominant_state,result_comment
+ROB-01_SAFE_DRY,Safe dry following,SAFE,500,500,100,0,0,SAFE,Stable under uncertainty
+ROB-02_WARNING_WET,Wet-road warning case,WARNING,500,416,83.2,9.2,0,WARNING,Moderately stable under uncertainty
+ROB-03_EMERGENCY_DRY,Emergency dry obstacle,EMERGENCY_BRAKE,500,500,100,100,0,EMERGENCY_BRAKE,Stable under uncertainty
+ROB-04_DELAY_WET,Delay-sensitive wet case,WARNING,500,288,57.6,16,0,WARNING,Sensitive to uncertainty

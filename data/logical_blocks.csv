@@ -1,0 +1,10 @@
+logical_id,logical_block_name,logical_role,input_interfaces,output_interfaces,allocated_function_ids,comment
+L1,Vehicle State Processor,Prepares vehicle and scenario input data,IF-01;IF-02;IF-03;IF-04;IF-05;IF-06,IF-07;IF-08,F1,Organizes and validates scenario-level inputs before risk evaluation
+L2,Range Estimator,Estimates concept-level driving range,vehicle_concept_parameters,estimated_range_km,F2,Supports vehicle concept comparison and selection
+L3,Stopping Distance Estimator,Calculates stopping distance using speed friction and delay assumptions,IF-01;IF-05;IF-06,IF-07,F3,Represents the braking-distance calculation logic
+L4,TTC Estimator,Calculates time to collision from distance and relative speed,IF-02;IF-03,IF-08,F4,Represents simplified closing-risk estimation
+L5,Warning State Machine,Classifies the current risk state using stopping distance and TTC,IF-02;IF-07;IF-08,IF-09,F5,Outputs SAFE CAUTION WARNING or EMERGENCY_BRAKE
+L6,Emergency Brake Request Logic,Generates brake request based on the warning state,IF-09,IF-10,F6,Brake request is generated only in EMERGENCY_BRAKE state
+L7,Actuator Concept Selector,Selects the concept-level actuator candidate,actuator_candidates;selection_weights,selected_actuator_concept,F7,Supports physical architecture selection at concept level
+L8,Verification Manager,Checks outputs against requirement pass rules,IF-07;IF-08;IF-09;IF-10,IF-11,F8,Produces scenario pass or fail results
+L9,Traceability Manager,Maintains requirement-to-architecture-to-verification links,requirements;functions;logical_blocks;physical_components;scenarios,traceability_matrix,F9,Supports lightweight MBSE/RFLP traceability

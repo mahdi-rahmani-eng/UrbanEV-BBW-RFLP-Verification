@@ -1,0 +1,7 @@
+need_id,stakeholder,need_statement,derived_requirement_ids,comment
+NEED-01,Instructor,The project should demonstrate a structured concept-design workflow for a low-speed urban EV,REQ-VEH-01;REQ-VEH-03,Aligns the project with the Concept Design of New Vehicles course
+NEED-02,Student/Designer,The project should be executable in MATLAB and produce visible results,REQ-VEH-02;REQ-VFY-01,Ensures the project is not only documentation-based
+NEED-03,Urban user,The vehicle concept should be suitable for low-speed campus or urban mobility,REQ-VEH-01;REQ-VEH-02,Defines the operational purpose of the selected vehicle concept
+NEED-04,Verification engineer,The emergency braking logic should be tested through repeatable scenarios,REQ-BBW-01;REQ-BBW-02;REQ-BBW-03;REQ-VFY-01,Supports scenario-based MATLAB verification
+NEED-05,Systems engineer,The project should connect requirements functions logical blocks physical elements and verification results,REQ-TRACE-01,Supports lightweight MBSE/RFLP traceability
+NEED-06,Maintainer/Reviewer,The project scope and limitations should be explicit and easy to understand,REQ-DOC-01,Prevents overclaiming production brake-by-wire or industrial MBSE capability

@@ -1,0 +1,11 @@
+verification_id,requirement_id,scenario_or_test,assessment_type,pass_rule,expected_evidence,comment
+VFY-01,REQ-VEH-01,Concept comparison,design review,Selected concept remains within low-speed urban envelope not exceeding 50 km/h,concept_selection_results.csv,Checks that the selected concept is suitable for low-speed urban operation
+VFY-02,REQ-VEH-02,Range model,logical assessment,Estimated range is calculated and reported for each vehicle concept,concept_selection_results.csv,Checks that range estimation is available for concept selection
+VFY-03,REQ-VEH-03,Concept scoring,logical assessment,Total weighted score is calculated for each concept and one concept is selected,concept_selection_results.csv,Checks that concept selection is based on a documented scoring method
+VFY-04,REQ-BBW-01,SCN-01 to SCN-06,logical assessment,Stopping distance is calculated and is positive for each scenario,scenario_verification_results.csv,Checks stopping-distance calculation using speed friction and delay
+VFY-05,REQ-BBW-02,SCN-01 to SCN-06,logical assessment,TTC is calculated when relative speed is greater than zero,scenario_verification_results.csv,Checks TTC calculation using target distance and relative speed
+VFY-06,REQ-BBW-03,SCN-01 to SCN-06,logical assessment,Warning state follows the defined stopping-distance and TTC threshold table,scenario_verification_results.csv,Checks SAFE CAUTION WARNING and EMERGENCY_BRAKE classification
+VFY-07,REQ-BBW-04,SCN-05,trigger-response inspired assessment,If warning_state is EMERGENCY_BRAKE then brake_request equals 1,scenario_verification_results.csv,Checks emergency brake request generation under critical condition
+VFY-08,REQ-BBW-05,SCN-06,comparison assessment,Stopping distance with actuator delay is greater than stopping distance without actuator delay,scenario_verification_results.csv,Checks that actuator delay affects stopping-distance verification
+VFY-09,REQ-BBW-06,Actuator concept selection,design review,Actuator candidate is selected using documented weighted criteria,actuator_selection_results.csv,Checks actuator selection at concept level
+VFY-10,REQ-TRACE-01,Traceability review,traceability assessment,Each major requirement is linked to at least one function logical block physical element and verification item,traceability_matrix.csv,Checks lightweight MBSE/RFLP traceability

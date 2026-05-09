@@ -1,0 +1,10 @@
+constraint_id,related_uca,constraint_statement,implementation_in_project,verification_or_evidence
+SC-01,UCA-01,The logic shall generate brake_request when the warning state is EMERGENCY_BRAKE,Implemented in brake-request logic,SCN-05 and scenario_verification_results.csv
+SC-02,UCA-02,The logic shall not generate brake_request when the state is SAFE or CAUTION,Implemented by binary brake_request rule,SCN-01 and SCN-02
+SC-03,UCA-03,The logic shall classify EMERGENCY_BRAKE when TTC is below the emergency threshold,Implemented in warning state thresholds,warning_logic_model.m and SCN-05
+SC-04,UCA-04,The brake_request shall remain linked to the critical warning state during the simplified scenario evaluation,Implemented through state-based brake_request logic,scenario_verification_results.csv
+SC-05,UCA-05,The project shall clearly define the ODD and exclude unsupported operating conditions,Implemented in ODD documentation,docs/15_operational_design_domain.md
+SC-06,UCA-06,The warning logic shall not remain SAFE when TTC or stopping-distance thresholds indicate risk,Implemented in warning state thresholds,SCN-02 to SCN-05
+SC-07,UCA-07,The logic shall avoid EMERGENCY_BRAKE in normal SAFE scenarios,Implemented through threshold severity order,SCN-01
+SC-08,UCA-08,Wet-road scenarios shall use wet-road friction assumptions,Implemented in scenario table and friction input,SCN-04 and SCN-06
+SC-09,UCA-09,Stopping-distance calculation shall include actuator delay assumptions,Implemented in braking-distance model,REQ-BBW-05 and SCN-06

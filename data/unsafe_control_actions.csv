@@ -1,0 +1,10 @@
+uca_id,control_action,unsafe_case,context,related_hazard,safety_constraint
+UCA-01,brake_request,not provided when required,target distance <= stopping distance or TTC <= 1.5 s,H1,SC-01
+UCA-02,brake_request,provided when not required,state is SAFE or CAUTION,H2,SC-02
+UCA-03,brake_request,provided too late,TTC is already below emergency threshold before brake_request is generated,H3,SC-03
+UCA-04,brake_request,stopped too early,risk condition remains critical but brake_request becomes 0,H1,SC-04
+UCA-05,brake_request,provided outside ODD,scenario exceeds speed road geometry target or perception assumptions,H6,SC-05
+UCA-06,warning_state,remains SAFE in unsafe condition,TTC or stopping distance threshold is violated,H3,SC-06
+UCA-07,warning_state,escalates too aggressively,SAFE scenario becomes EMERGENCY_BRAKE,H2,SC-07
+UCA-08,friction_assumption,wet road treated as dry,road condition is wet but mu is set as dry,H4,SC-08
+UCA-09,delay_assumption,delay not included,actuator delay is ignored in stopping distance,H5,SC-09

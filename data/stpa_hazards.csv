@@ -1,0 +1,11 @@
+hazard_id,loss_id,hazard_statement,related_condition,related_requirement,mitigation
+L1,LOSS-01,Vehicle collides with front obstacle,critical TTC or unsafe stopping distance,REQ-BBW-03;REQ-BBW-04,Generate WARNING or EMERGENCY_BRAKE according to thresholds
+L2,LOSS-02,Unnecessary emergency brake request occurs,state is SAFE or CAUTION but brake_request is generated,REQ-BBW-04,Allow brake_request only in EMERGENCY_BRAKE state
+L3,LOSS-03,Driver receives warning too late,TTC is below warning threshold before WARNING state is generated,REQ-BBW-03,Use TTC and stopping distance together for warning classification
+L4,LOSS-04,Brake request is generated outside the intended ODD,scenario is outside low-speed urban ODD,REQ-TRACE-01;ODD-01,Define ODD and document out-of-scope conditions
+H1,LOSS-01,Emergency brake request is not generated when collision risk is critical,TTC <= emergency threshold or distance <= 0.8 stopping distance,REQ-BBW-04,Trigger brake_request in EMERGENCY_BRAKE state
+H2,LOSS-02,Emergency brake request is generated when situation is not critical,state is SAFE or CAUTION,REQ-BBW-04,Restrict brake_request to EMERGENCY_BRAKE only
+H3,LOSS-03,Warning state remains SAFE despite unsafe TTC or stopping-distance condition,TTC or distance violates defined thresholds,REQ-BBW-03,Check warning state against threshold table
+H4,LOSS-01,Wet-road condition is underestimated,friction coefficient is too high for wet-road case,REQ-BBW-01;REQ-BBW-05,Use dry and wet friction assumptions
+H5,LOSS-01,Actuator or controller delay is not considered,stopping distance excludes delay,REQ-BBW-05,Include actuator delay in stopping-distance calculation
+H6,LOSS-04,System is used outside supported speed range,ego speed > 50 km/h,ODD-02,Limit project validity to 0 to 50 km/h

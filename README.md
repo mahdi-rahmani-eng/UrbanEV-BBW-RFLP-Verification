@@ -318,3 +318,169 @@ Possible extensions:
 - Add more detailed actuator dynamics
 - Add a simplified interface to upstream ADAS perception outputs
 - Add more scenarios with sensor uncertainty and variable road friction
+
+## Additional Documentation Added for Course Alignment
+
+To better align this project with the Concept Design of New Vehicles course workflow, the project includes additional lightweight MBSE/RFLP and concept-design documentation.
+
+These documents strengthen the project without turning it into a full industrial MBSE, ISO 26262, SOTIF, or production brake-by-wire implementation.
+
+### Added Documentation Files
+
+| File | Purpose |
+|---|---|
+| `docs/02_black_box_analysis.md` | Defines the system boundary, mission, lifecycle, external actors, interfaces, operating modes, and services. |
+| `docs/03_requirements_quality_review.md` | Reviews the requirements using simple requirements-engineering quality criteria. |
+| `docs/04_concept_generation.md` | Explains how the three low-speed urban EV concepts were generated before selection. |
+| `docs/05_concept_screening.md` | Adds a qualitative Pugh-style concept-screening step before MATLAB-based scoring. |
+| `docs/06_verification_plan.md` | Defines requirement-level verification items, assessment types, pass rules, and evidence files. |
+| `docs/07_traceability_links.md` | Explains the lightweight traceability-link structure from needs to verification. |
+| `docs/08_assumptions_and_limitations.md` | Defines the project assumptions and limitations to prevent overclaiming. |
+| `docs/09_scenario_catalog.md` | Documents the dry/wet braking scenarios used for MATLAB verification. |
+| `docs/10_engineering_decision_log.md` | Records the main engineering decisions and their rationale. |
+| `docs/11_simple_risk_register.md` | Identifies simple project risks and mitigation actions. |
+| `docs/12_verification_coverage.md` | Summarizes requirement coverage and verification evidence. |
+| `docs/13_future_work_and_internship_extension.md` | Describes realistic future extensions suitable for internship growth. |
+| `docs/14_demo_guide.md` | Explains how to run the project and inspect the results. |
+
+### Added Data Files
+
+| File | Purpose |
+|---|---|
+| `data/stakeholder_needs.csv` | Links stakeholder needs to derived requirements. |
+| `data/interfaces.csv` | Defines scenario inputs, internal signals, outputs, units, and source/destination elements. |
+| `data/concept_screening.csv` | Provides qualitative concept screening before final scoring. |
+| `data/functions.csv` | Defines the functional architecture elements. |
+| `data/logical_blocks.csv` | Defines the logical architecture elements. |
+| `data/physical_components.csv` | Defines concept-level physical components and implementation elements. |
+| `data/function_logical_allocation.csv` | Maps functions to logical blocks. |
+| `data/logical_physical_allocation.csv` | Maps logical blocks to physical/concept components. |
+| `data/verification_plan.csv` | Defines verification items, pass rules, and expected evidence. |
+| `data/traceability_links.csv` | Defines need-requirement-function-logical-physical-verification links. |
+
+### Updated Project Logic
+
+The extended project now follows this clearer academic workflow:
+
+```text
+Needs
+→ Black Box Analysis
+→ Requirements Definition and Quality Review
+→ Concept Generation
+→ Concept Screening
+→ MATLAB-Based Concept Scoring
+→ Lightweight RFLP Architecture
+→ Scenario-Based Verification
+→ Traceability Links
+→ Verification Coverage
+```
+
+### Scope-Safe Positioning
+
+This project remains a university-level concept design and MATLAB verification project.
+
+It does not claim:
+
+- production-ready brake-by-wire design;
+- full autonomous driving;
+- real camera/radar perception;
+- sensor fusion;
+- ISO 26262 compliance;
+- SOTIF compliance;
+- HIL/SIL validation;
+- full industrial MBSE implementation.
+
+The added documentation improves clarity, traceability, and reviewability while keeping the project realistic and executable.
+
+
+
+
+## Advanced Scope-Safe Extensions
+
+To strengthen the project while keeping it realistic and university-level, several advanced but scope-safe extensions were added.
+
+These extensions improve the project toward modern ADAS-oriented concept verification, safety reasoning, and MATLAB-based robustness analysis.
+
+The project still does not claim production brake-by-wire design, full AEB functionality, ISO 26262 compliance, ISO 21448/SOTIF compliance, HIL/SIL validation, real sensor fusion, or industrial MBSE completeness.
+
+### Added Advanced Extensions
+
+| Extension | Purpose | Main Files |
+|---|---|---|
+| ODD Definition | Defines the valid operating envelope for the low-speed urban EV concept. | `docs/15_operational_design_domain.md`, `data/odd_definition.csv` |
+| Scenario Taxonomy | Defines an ODD-constrained parameterized scenario space. | `docs/16_scenario_taxonomy.md`, `matlab/generate_parameterized_scenarios.m` |
+| STPA-Lite Safety Analysis | Adds lightweight safety reasoning around unsafe brake-request control actions. | `docs/17_stpa_lite_safety_analysis.md`, `data/stpa_hazards.csv`, `data/unsafe_control_actions.csv`, `data/safety_constraints.csv` |
+| Parameterized Scenario Testing | Batch-verifies a generated scenario set across speed, road, delay, and risk-family variations. | `docs/20_parameterized_scenario_testing.md`, `matlab/scenario_batch_verification.m` |
+| Robustness / Monte Carlo Analysis | Tests warning-state stability under simplified input uncertainty. | `docs/18_robustness_and_sensitivity_analysis.md`, `matlab/robustness_monte_carlo_analysis.m` |
+| Requirement and ODD Coverage Metrics | Calculates simple coverage metrics for requirements and ODD entries. | `docs/19_verification_coverage_metrics.md`, `matlab/coverage_analysis.m` |
+
+### Advanced Workflow
+
+```text
+Stakeholder Needs
+→ Black Box Analysis
+→ ODD Definition
+→ Requirements Definition and Quality Review
+→ Concept Generation
+→ Concept Screening
+→ MATLAB-Based Concept Scoring
+→ Lightweight RFLP Architecture
+→ STPA-Lite Safety Analysis
+→ Scenario Taxonomy
+→ Parameterized Scenario Generation
+→ Scenario-Based MATLAB Verification
+→ Robustness / Monte Carlo Analysis
+→ Traceability Links
+→ Requirement and ODD Coverage Metrics
+→ Verification Summary
+```
+
+### Advanced MATLAB Scripts
+
+| Script | Purpose |
+|---|---|
+| `matlab/generate_parameterized_scenarios.m` | Generates an ODD-constrained parameterized scenario set using the default scenario-generation settings. |
+| `matlab/scenario_batch_verification.m` | Runs batch verification over the generated parameterized scenarios. |
+| `matlab/robustness_monte_carlo_analysis.m` | Runs Monte Carlo robustness analysis under simplified input uncertainty. |
+| `matlab/coverage_analysis.m` | Calculates requirement coverage and ODD coverage metrics. |
+
+### Advanced Output Files
+
+| Output | Purpose |
+|---|---|
+| `data/parameterized_scenarios.csv` | Stores generated parameterized scenarios. |
+| `results/parameterized_scenario_results.csv` | Stores batch verification results for generated scenarios. |
+| `results/robustness_results.csv` | Summarizes Monte Carlo robustness metrics. |
+| `results/robustness_sample_points.csv` | Stores Monte Carlo sample-level outputs. |
+| `results/requirement_coverage_results.csv` | Stores requirement coverage status. |
+| `results/odd_coverage_results.csv` | Stores ODD coverage status. |
+| `figures/scenario_parameter_space.png` | Shows the generated scenario space. |
+| `figures/parameterized_verification_summary.png` | Shows pass/fail summary for generated scenarios. |
+| `figures/parameterized_warning_state_distribution.png` | Shows calculated warning-state distribution. |
+| `figures/robustness_pass_rate.png` | Shows expected-state robustness rate. |
+| `figures/threshold_sensitivity_map.png` | Shows sensitivity of warning state to speed and distance variation. |
+| `figures/verification_coverage_chart.png` | Shows requirement coverage summary. |
+| `figures/odd_coverage_chart.png` | Shows ODD coverage summary. |
+
+### Scope-Safe Interpretation
+
+These extensions are inspired by ODD definition, scenario-based verification, and safety-engineering practices.
+
+However, they remain lightweight and academic.
+
+They are not formal implementations of ASAM OpenODD, ASAM OpenSCENARIO, ISO 34502, ISO 26262, ISO 21448/SOTIF, production AEB validation, real brake-by-wire validation, real sensor fusion, HIL testing, or SIL testing.
+
+The purpose is to make the project more traceable, testable, and internship-oriented while keeping it realistic and executable.
+
+
+## Documentation Reading Guide
+
+The documentation was expanded step by step to support the course-aligned concept-design workflow.
+
+To avoid confusion and provide a clear reading order, a documentation index is provided here:
+
+- `docs/index.md`
+
+This index explains the recommended order for reviewing the project documents, including Black Box Analysis, ODD definition, concept generation, scenario taxonomy, STPA-Lite safety analysis, robustness analysis, traceability, coverage metrics, and demo guidance.
+
+The index is only an organizational guide and does not introduce additional industrial claims.

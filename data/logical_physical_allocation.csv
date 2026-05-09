@@ -1,0 +1,12 @@
+allocation_id,logical_id,logical_block_name,physical_id,physical_component_name,allocation_type,scope_note,comment
+LPA-01,L1,Vehicle State Processor,P2,BBW ECU Concept,implemented_by,concept-level only,Input processing is represented as part of the concept-level BBW ECU logic
+LPA-02,L2,Range Estimator,P1,Low-Speed Urban EV Platform,implemented_by,concept-level only,Range estimation is linked to the selected vehicle platform parameters
+LPA-03,L3,Stopping Distance Estimator,P2,BBW ECU Concept,implemented_by,concept-level only,Stopping-distance calculation is implemented as simplified control logic
+LPA-04,L4,TTC Estimator,P4,Distance and Relative-Speed Input Interface,implemented_by,scenario-level input only,TTC estimation uses simplified upstream distance and relative-speed inputs
+LPA-05,L5,Warning State Machine,P2,BBW ECU Concept,implemented_by,concept-level only,Warning-state logic is represented in the BBW ECU concept
+LPA-06,L5,Warning State Machine,P6,HMI Warning Interface,communicated_by,concept-level only,Warning state is communicated through a simplified HMI interface
+LPA-07,L6,Emergency Brake Request Logic,P2,BBW ECU Concept,implemented_by,concept-level only,Brake-request decision is represented as ECU-level control logic
+LPA-08,L6,Emergency Brake Request Logic,P5,Electro-Hydraulic Brake Actuator Concept,commanded_to,concept-level only,Brake request is conceptually sent to the selected actuator candidate
+LPA-09,L7,Actuator Concept Selector,P5,Electro-Hydraulic Brake Actuator Concept,selects,concept-level only,The selector identifies the electro-hydraulic actuator as the preferred candidate
+LPA-10,L8,Verification Manager,P7,MATLAB Verification Environment,verified_by,script-based verification only,Scenario verification is executed through MATLAB scripts not Simulink Test or HIL
+LPA-11,L9,Traceability Manager,P8,Results and Documentation Package,documented_by,documentation artifact only,Traceability is stored as CSV Markdown and README evidence

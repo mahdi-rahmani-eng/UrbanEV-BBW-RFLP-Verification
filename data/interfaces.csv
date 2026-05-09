@@ -1,0 +1,12 @@
+interface_id,name,direction,type,unit,source,destination,description
+IF-01,ego_speed,input,signal,km/h,scenario file,Vehicle State Processor,Vehicle longitudinal speed used for stopping-distance calculation
+IF-02,target_distance,input,signal,m,scenario file,TTC Estimator,Distance between ego vehicle and target/object ahead
+IF-03,relative_speed,input,signal,km/h,scenario file,TTC Estimator,Closing speed between ego vehicle and target/object
+IF-04,road_condition,input,categorical,dry/wet,scenario file,Stopping Distance Estimator,Road condition used to select friction coefficient
+IF-05,friction_mu,input,numeric,-,scenario file,Stopping Distance Estimator,Friction coefficient associated with dry or wet road condition
+IF-06,actuator_delay,input,signal,s,scenario file,Actuator Delay Model,Controller and actuator delay used in stopping-distance calculation
+IF-07,stopping_distance,internal signal,numeric,m,Stopping Distance Estimator,Warning State Machine,Calculated stopping distance including delay
+IF-08,ttc,internal signal,numeric,s,TTC Estimator,Warning State Machine,Calculated time to collision
+IF-09,warning_state,output,categorical,-,Warning State Machine,Verification Manager,Risk classification output
+IF-10,brake_request,output,binary,0/1,Emergency Brake Request Logic,Verification Manager,Emergency brake request generated only in EMERGENCY_BRAKE state
+IF-11,verification_result,output,categorical,Pass/Fail,Verification Manager,results folder,Scenario-level requirement verification result

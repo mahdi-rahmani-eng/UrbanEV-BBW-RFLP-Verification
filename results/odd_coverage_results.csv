@@ -1,0 +1,16 @@
+odd_id,category,attribute,supported_value,status,coverage_class,verification_use,scope_note
+ODD-01,environment,operating_environment,low-speed urban and campus environment,in_scope,Covered within defined ODD,Defines the main use case,Not valid for highway operation
+ODD-02,speed,ego_speed_range,0 to 50 km/h,in_scope,Covered within defined ODD,Used to define scenario speed limits,No high-speed motorway cases
+ODD-03,road_condition,road_surface,dry asphalt or wet asphalt,in_scope,Covered within defined ODD,Used to select friction coefficient,No snow ice gravel or off-road cases
+ODD-04,road_geometry,geometry,straight road only,in_scope,Covered within defined ODD,Simplifies stopping-distance and TTC logic,No curves intersections slopes or complex geometry
+ODD-05,target,target_type,lead vehicle or stationary obstacle,in_scope,Covered within defined ODD,Used for scenario target definition,No pedestrian cyclist animal or multi-object case
+ODD-06,visibility,visibility_condition,clear visibility assumed,in_scope,Covered within defined ODD,Keeps perception outside scope,No fog rain night glare or occlusion modelling
+ODD-07,sensor_input,input_source,simplified scenario-level input,in_scope,Covered within defined ODD,Supports MATLAB verification,No real camera radar lidar or sensor fusion
+ODD-08,driver_role,driver_responsibility,driver remains responsible,in_scope,Covered within defined ODD,Limits HMI warning interpretation,No full autonomous driving claim
+ODD-09,brake_request,system_action,concept-level emergency brake request only,in_scope,Covered within defined ODD,Defines brake_request output,No production brake control or actuator command
+ODD-10,verification,verification_method,MATLAB script-based scenario verification,in_scope,Covered within defined ODD,Defines evidence generation,No HIL SIL or certified validation
+ODD-11,excluded_environment,highway_operation,not supported,out_of_scope,Out of scope / not covered,Clarifies limitation,No highway or motorway validation
+ODD-12,excluded_weather,severe_weather,not supported,out_of_scope,Out of scope / not covered,Clarifies limitation,No snow ice fog or heavy rain validation
+ODD-13,excluded_road,curved_or_intersection_road,not supported,out_of_scope,Out of scope / not covered,Clarifies limitation,No intersection or curved-road scenario
+ODD-14,excluded_perception,real_sensor_perception,not supported,out_of_scope,Out of scope / not covered,Clarifies limitation,No real ADAS perception pipeline
+ODD-15,excluded_safety_certification,ISO_26262_or_SOTIF_compliance,not claimed,out_of_scope,Out of scope / not covered,Clarifies limitation,No certified safety compliance

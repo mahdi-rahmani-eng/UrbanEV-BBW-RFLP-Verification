@@ -1,0 +1,12 @@
+requirement_id,has_function_link,has_verification_link,coverage_status,coverage_comment
+REQ-BBW-01,1,1,Complete,Requirement is linked to function and verification item.
+REQ-BBW-02,1,1,Complete,Requirement is linked to function and verification item.
+REQ-BBW-03,1,1,Complete,Requirement is linked to function and verification item.
+REQ-BBW-04,1,1,Complete,Requirement is linked to function and verification item.
+REQ-BBW-05,0,1,Partial,Requirement has only partial traceability or verification coverage.
+REQ-BBW-06,1,1,Complete,Requirement is linked to function and verification item.
+REQ-TRACE-01,1,1,Complete,Requirement is linked to function and verification item.
+REQ-VEH-01,0,1,Partial,Requirement has only partial traceability or verification coverage.
+REQ-VEH-02,1,1,Complete,Requirement is linked to function and verification item.
+REQ-VEH-03,0,1,Partial,Requirement has only partial traceability or verification coverage.
+REQ-VFY-01,0,0,Not covered,Requirement has no detected function or verification link.

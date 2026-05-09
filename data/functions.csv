@@ -1,0 +1,10 @@
+function_id,function_name,function_statement,input_flow,output_flow,flow_type,related_requirement_ids,comment
+F1,Receive scenario inputs,Receive vehicle and scenario input data,ego_speed;target_distance;relative_speed;road_condition;actuator_delay,validated_inputs,signal,REQ-BBW-01;REQ-BBW-02,Prepares scenario data for braking-risk evaluation
+F2,Estimate vehicle range,Estimate the vehicle driving range from concept parameters,battery_kWh;mass_kg;CdA;Crr,estimated_range_km,signal,REQ-VEH-02,Supports vehicle concept comparison
+F3,Calculate stopping distance,Calculate stopping distance using speed friction and delay assumptions,ego_speed;friction_mu;actuator_delay,stopping_distance_m,signal,REQ-BBW-01;REQ-BBW-05,Core braking-distance function
+F4,Calculate TTC,Calculate time to collision using target distance and relative speed,target_distance;relative_speed,ttc_s,signal,REQ-BBW-02,Supports risk classification
+F5,Classify warning state,Classify risk state using stopping distance and TTC thresholds,stopping_distance_m;ttc_s;target_distance,warning_state,signal,REQ-BBW-03,Outputs SAFE CAUTION WARNING or EMERGENCY_BRAKE
+F6,Generate brake request,Generate emergency brake request based on warning state,warning_state,brake_request,signal,REQ-BBW-04,Brake request is 1 only in EMERGENCY_BRAKE state
+F7,Select actuator concept,Select a concept-level brake actuator candidate,actuator_candidates;selection_weights,selected_actuator_concept,signal,REQ-BBW-06,Supports physical concept selection
+F8,Verify scenario result,Verify scenario outputs against requirement pass rules,scenario_outputs;verification_rules,verification_result,signal,REQ-VFY-01;REQ-TRACE-01,Produces pass or fail verification result
+F9,Maintain traceability,Maintain links between requirements functions logical blocks physical elements and scenarios,requirements;functions;logical_blocks;physical_components;scenarios,traceability_matrix,signal,REQ-TRACE-01,Supports lightweight MBSE/RFLP traceability

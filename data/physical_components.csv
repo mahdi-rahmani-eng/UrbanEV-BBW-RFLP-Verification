@@ -1,0 +1,9 @@
+physical_id,physical_component_name,physical_role,implemented_logical_ids,component_type,scope_note,comment
+P1,Low-Speed Urban EV Platform,Concept-level vehicle platform used for range and braking assessment,L1;L2,vehicle concept,concept-level only,Represents the selected low-speed urban EV concept
+P2,BBW ECU Concept,Concept-level electronic control unit for braking-risk logic,L1;L3;L4;L5;L6,control concept,not a real ECU design,Represents the computational control side of the brake-request logic
+P3,Wheel-Speed Sensor Concept,Simplified speed input source for ego-speed information,L1;sensor concept,not real sensor modelling,Provides ego speed as scenario-level input
+P4,Distance and Relative-Speed Input Interface,Simplified upstream input interface for target distance and relative speed,L1;L4,input interface,not real radar or camera perception,Represents simplified upstream ADAS/risk input
+P5,Electro-Hydraulic Brake Actuator Concept,Selected concept-level actuator candidate for emergency brake-request implementation,L6;L7,actuator concept,not detailed hydraulic modelling,Selected as a balanced concept-level brake actuator candidate
+P6,HMI Warning Interface,Concept-level human-machine interface for warning-state output,L5,HMI concept,not production HMI design,Represents warning communication to the driver/user
+P7,MATLAB Verification Environment,Script-based environment for scenario execution and result generation,L8;L9,verification environment,not Simulink Test or HIL,Executes scenario verification and stores CSV and figure outputs
+P8,Results and Documentation Package,GitHub documentation package containing outputs figures and traceability,L9,documentation artifact,not industrial model repository,Stores project evidence for review and reproducibility

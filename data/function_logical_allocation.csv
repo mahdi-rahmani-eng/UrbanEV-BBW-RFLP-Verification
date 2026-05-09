@@ -1,0 +1,10 @@
+allocation_id,function_id,function_name,logical_id,logical_block_name,allocation_type,comment
+FLA-01,F1,Receive scenario inputs,L1,Vehicle State Processor,allocated_to,Scenario input reception is allocated to the vehicle state processor
+FLA-02,F2,Estimate vehicle range,L2,Range Estimator,allocated_to,Vehicle range estimation is allocated to the range estimator
+FLA-03,F3,Calculate stopping distance,L3,Stopping Distance Estimator,allocated_to,Stopping-distance calculation is allocated to the stopping distance estimator
+FLA-04,F4,Calculate TTC,L4,TTC Estimator,allocated_to,TTC calculation is allocated to the TTC estimator
+FLA-05,F5,Classify warning state,L5,Warning State Machine,allocated_to,Warning-state classification is allocated to the warning state machine
+FLA-06,F6,Generate brake request,L6,Emergency Brake Request Logic,allocated_to,Brake-request generation is allocated to emergency brake request logic
+FLA-07,F7,Select actuator concept,L7,Actuator Concept Selector,allocated_to,Actuator concept selection is allocated to the actuator concept selector
+FLA-08,F8,Verify scenario result,L8,Verification Manager,allocated_to,Scenario pass or fail checking is allocated to the verification manager
+FLA-09,F9,Maintain traceability,L9,Traceability Manager,allocated_to,Traceability maintenance is allocated to the traceability manager

@@ -1,0 +1,8 @@
+criterion,C1_campus_lightweight,C2_balanced_reference,C3_extended_urban,comment
+Range adequacy,-,0,+,C3 has the largest battery and highest range potential while C1 is limited
+Braking feasibility,+,0,-,C1 benefits from lower mass and speed while C3 has higher mass and braking demand
+Mass suitability,+,0,-,C1 is the lightest concept and C3 is the heaviest
+Motor adequacy,-,0,+,C3 has the highest motor power while C1 is limited for broader urban use
+Implementation simplicity,+,0,-,C1 is simplest while C3 is more complex
+Urban usability,-,0,+,C3 supports higher-speed urban operation while C1 is more campus-focused
+Overall balance,-,0,0,C2 is used as the balanced reference concept

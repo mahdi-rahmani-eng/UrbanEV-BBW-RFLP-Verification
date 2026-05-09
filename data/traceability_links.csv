@@ -1,0 +1,43 @@
+link_id,source_id,source_type,link_type,target_id,target_type,comment
+TL-001,NEED-01,stakeholder_need,derived_to,REQ-VEH-01,requirement,Instructor need is translated into vehicle concept requirement
+TL-002,NEED-02,stakeholder_need,derived_to,REQ-VFY-01,requirement,Executable MATLAB need is translated into verification requirement
+TL-003,NEED-03,stakeholder_need,derived_to,REQ-VEH-02,requirement,Urban mobility need is translated into range requirement
+TL-004,NEED-04,stakeholder_need,derived_to,REQ-BBW-03,requirement,Verification need is translated into warning logic requirement
+TL-005,NEED-05,stakeholder_need,derived_to,REQ-TRACE-01,requirement,Systems engineering need is translated into traceability requirement
+TL-006,REQ-VEH-02,requirement,related_to,F2,function,Range requirement is related to range estimation function
+TL-007,REQ-BBW-01,requirement,related_to,F3,function,Stopping distance requirement is related to stopping distance function
+TL-008,REQ-BBW-02,requirement,related_to,F4,function,TTC requirement is related to TTC calculation function
+TL-009,REQ-BBW-03,requirement,related_to,F5,function,Warning state requirement is related to warning classification function
+TL-010,REQ-BBW-04,requirement,related_to,F6,function,Brake request requirement is related to brake request function
+TL-011,REQ-BBW-06,requirement,related_to,F7,function,Actuator selection requirement is related to actuator selection function
+TL-012,REQ-TRACE-01,requirement,related_to,F9,function,Traceability requirement is related to traceability function
+TL-013,F1,function,allocated_to,L1,logical_block,Scenario input function is allocated to vehicle state processor
+TL-014,F2,function,allocated_to,L2,logical_block,Range estimation function is allocated to range estimator
+TL-015,F3,function,allocated_to,L3,logical_block,Stopping distance function is allocated to stopping distance estimator
+TL-016,F4,function,allocated_to,L4,logical_block,TTC function is allocated to TTC estimator
+TL-017,F5,function,allocated_to,L5,logical_block,Warning classification function is allocated to warning state machine
+TL-018,F6,function,allocated_to,L6,logical_block,Brake request function is allocated to emergency brake request logic
+TL-019,F7,function,allocated_to,L7,logical_block,Actuator selection function is allocated to actuator concept selector
+TL-020,F8,function,allocated_to,L8,logical_block,Verification function is allocated to verification manager
+TL-021,F9,function,allocated_to,L9,logical_block,Traceability function is allocated to traceability manager
+TL-022,L1,logical_block,implemented_by,P2,physical_component,Vehicle state processing is represented by BBW ECU concept
+TL-023,L2,logical_block,implemented_by,P1,physical_component,Range estimation is linked to low speed urban EV platform
+TL-024,L3,logical_block,implemented_by,P2,physical_component,Stopping distance estimator is represented by BBW ECU concept
+TL-025,L4,logical_block,implemented_by,P4,physical_component,TTC estimator uses distance and relative speed input interface
+TL-026,L5,logical_block,implemented_by,P2,physical_component,Warning state machine is represented by BBW ECU concept
+TL-027,L5,logical_block,communicated_by,P6,physical_component,Warning state is communicated through HMI warning interface
+TL-028,L6,logical_block,implemented_by,P2,physical_component,Brake request logic is represented by BBW ECU concept
+TL-029,L6,logical_block,commanded_to,P5,physical_component,Brake request is conceptually sent to actuator candidate
+TL-030,L7,logical_block,selects,P5,physical_component,Actuator selector identifies electro hydraulic actuator candidate
+TL-031,L8,logical_block,verified_by,P7,physical_component,Verification manager is implemented by MATLAB verification environment
+TL-032,L9,logical_block,documented_by,P8,physical_component,Traceability manager is documented in results and GitHub package
+TL-033,REQ-VEH-01,requirement,verified_by,VFY-01,verification_item,Vehicle operating envelope is verified by concept comparison
+TL-034,REQ-VEH-02,requirement,verified_by,VFY-02,verification_item,Range requirement is verified by range model output
+TL-035,REQ-VEH-03,requirement,verified_by,VFY-03,verification_item,Concept selection requirement is verified by concept scoring
+TL-036,REQ-BBW-01,requirement,verified_by,VFY-04,verification_item,Stopping distance requirement is verified by scenario simulation
+TL-037,REQ-BBW-02,requirement,verified_by,VFY-05,verification_item,TTC requirement is verified by scenario simulation
+TL-038,REQ-BBW-03,requirement,verified_by,VFY-06,verification_item,Warning classification requirement is verified by scenario simulation
+TL-039,REQ-BBW-04,requirement,verified_by,VFY-07,verification_item,Brake request requirement is verified by emergency scenario
+TL-040,REQ-BBW-05,requirement,verified_by,VFY-08,verification_item,Actuator delay requirement is verified by delay sensitive scenario
+TL-041,REQ-BBW-06,requirement,verified_by,VFY-09,verification_item,Actuator concept requirement is verified by design review
+TL-042,REQ-TRACE-01,requirement,verified_by,VFY-10,verification_item,Traceability requirement is verified by traceability review
