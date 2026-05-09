@@ -1,4 +1,5 @@
-# UrbanEV-BBW-RFLP-Verification
+readmeLines = readlines("README.md");
+sum(strcmp(strtrim(readmeLines), "## Future Work"))# UrbanEV-BBW-RFLP-Verification
 
 ## Lightweight MBSE/RFLP Concept Design and MATLAB-Based Verification of Concept-Level Brake-by-Wire Emergency Brake-Request Logic for a Low-Speed Urban EV
 
@@ -60,45 +61,91 @@ This project does not claim:
 
 ```text
 UrbanEV-BBW-RFLP-Verification/
-│
-├── README.md
-│
-├── docs/
-│   ├── 01_project_overview.md
-│   ├── 02_requirements_table.md
-│   ├── 03_rflp_architecture.md
-│   ├── 04_scenario_catalogue.md
-│   ├── 05_traceability_matrix.md
-│   └── 06_scope_and_limitations.md
-│
-├── data/
-│   ├── vehicle_concepts.csv
-│   ├── requirements.csv
-│   ├── scenarios.csv
-│   └── actuator_candidates.csv
-│
-├── matlab/
-│   ├── run_all.m
-│   ├── range_estimation_model.m
-│   ├── braking_distance_model.m
-│   ├── ttc_model.m
-│   ├── warning_logic_model.m
-│   ├── bbw_emergency_braking_controller.m
-│   ├── concept_selection_model.m
-│   └── actuator_concept_selection.m
-│
-├── results/
-│   ├── concept_selection_results.csv
-│   ├── scenario_verification_results.csv
-│   ├── actuator_selection_results.csv
-│   ├── traceability_matrix.csv
-│   └── verification_summary.md
-│
-└── figures/
-    ├── vehicle_concept_comparison.png
-    ├── scenario_verification_summary.png
-    ├── warning_state_machine.png
-    └── rflp_digital_thread.png
+|
+|-- README.md
+|
+|-- docs/
+|   |-- index.md
+|   |-- 01_project_overview.md
+|   |-- 02_black_box_analysis.md
+|   |-- 03_requirements_quality_review.md
+|   |-- 04_concept_generation.md
+|   |-- 05_concept_screening.md
+|   |-- 06_verification_plan.md
+|   |-- 07_traceability_links.md
+|   |-- 08_assumptions_and_limitations.md
+|   |-- 09_scenario_catalog.md
+|   |-- 10_engineering_decision_log.md
+|   |-- 11_simple_risk_register.md
+|   |-- 12_verification_coverage.md
+|   |-- 13_future_work_and_internship_extension.md
+|   |-- 14_demo_guide.md
+|   |-- 15_operational_design_domain.md
+|   |-- 16_scenario_taxonomy.md
+|   |-- 17_stpa_lite_safety_analysis.md
+|   |-- 18_robustness_and_sensitivity_analysis.md
+|   |-- 19_verification_coverage_metrics.md
+|   |-- 20_parameterized_scenario_testing.md
+|
+|-- data/
+|   |-- vehicle_concepts.csv
+|   |-- requirements.csv
+|   |-- scenarios.csv
+|   |-- actuator_candidates.csv
+|   |-- stakeholder_needs.csv
+|   |-- interfaces.csv
+|   |-- concept_screening.csv
+|   |-- functions.csv
+|   |-- logical_blocks.csv
+|   |-- physical_components.csv
+|   |-- function_logical_allocation.csv
+|   |-- logical_physical_allocation.csv
+|   |-- verification_plan.csv
+|   |-- traceability_links.csv
+|   |-- odd_definition.csv
+|   |-- parameterized_scenarios.csv
+|   |-- stpa_hazards.csv
+|   |-- unsafe_control_actions.csv
+|   |-- safety_constraints.csv
+|
+|-- matlab/
+|   |-- run_all.m
+|   |-- range_estimation_model.m
+|   |-- braking_distance_model.m
+|   |-- ttc_model.m
+|   |-- warning_logic_model.m
+|   |-- bbw_emergency_braking_controller.m
+|   |-- concept_selection_model.m
+|   |-- actuator_concept_selection.m
+|   |-- generate_parameterized_scenarios.m
+|   |-- scenario_batch_verification.m
+|   |-- robustness_monte_carlo_analysis.m
+|   |-- coverage_analysis.m
+|
+|-- results/
+|   |-- concept_selection_results.csv
+|   |-- scenario_verification_results.csv
+|   |-- actuator_selection_results.csv
+|   |-- traceability_matrix.csv
+|   |-- verification_summary.md
+|   |-- parameterized_scenario_results.csv
+|   |-- robustness_results.csv
+|   |-- robustness_sample_points.csv
+|   |-- requirement_coverage_results.csv
+|   |-- odd_coverage_results.csv
+|
+|-- figures/
+|   |-- vehicle_concept_comparison.png
+|   |-- scenario_verification_summary.png
+|   |-- warning_state_machine.png
+|   |-- rflp_digital_thread.png
+|   |-- scenario_parameter_space.png
+|   |-- parameterized_verification_summary.png
+|   |-- parameterized_warning_state_distribution.png
+|   |-- robustness_pass_rate.png
+|   |-- threshold_sensitivity_map.png
+|   |-- verification_coverage_chart.png
+|   |-- odd_coverage_chart.png
 ```
 
 ---
@@ -311,13 +358,24 @@ The stopping-distance and TTC models are simplified and are used only for concep
 
 ## Future Work
 
-Possible extensions:
+The current project is complete at a university-level concept-design and MATLAB-based verification scope.
 
-- Transfer the RFLP structure into MATLAB System Composer
-- Implement the warning-state logic in Simulink
-- Add more detailed actuator dynamics
-- Add a simplified interface to upstream ADAS perception outputs
-- Add more scenarios with sensor uncertainty and variable road friction
+Future work can further extend the project without changing the current scope-safe positioning.
+
+Possible extensions include:
+
+- Transfer the lightweight RFLP structure into MATLAB System Composer for formal architecture views, ports, interfaces, allocations, and requirement links.
+- Implement the warning-state and brake-request logic as a Simulink block-level model.
+- Add Simulink Test cases for formalized scenario assessment and requirement-linked test results.
+- Expand the parameterized scenario space with more near-threshold, low-speed campus, wet-road, and actuator-delay cases.
+- Add more detailed actuator-response modelling while still avoiding production brake-by-wire claims.
+- Add simplified fault or invalid-input scenarios, such as missing distance input, unrealistic friction value, or delayed input update.
+- Add a lightweight report-generation script that automatically summarizes concept selection, scenario verification, robustness results, and coverage metrics.
+- Optionally connect the downstream brake-request logic to previous ADAS perception projects in a separate future branch.
+
+These future extensions should remain clearly separated from production AEB, ISO 26262, ISO 21448/SOTIF, HIL/SIL, real sensor fusion, and industrial brake-by-wire validation claims.
+
+---
 
 ## Additional Documentation Added for Course Alignment
 
