@@ -1,0 +1,7 @@
+test_scenario_id,test_description,test_expected_state,test_expected_code,test_actual_code,test_brake_request,test_state_match,test_stopping_distance_m,test_ttc_s,test_result
+SCN-01,Normal following,SAFE,0,0,0,1,3.20857611490752,18,PASS
+SCN-02,Close but not critical target,CAUTION,1,1,0,1,6.38596292520859,3.6,PASS
+SCN-03,High closing risk,WARNING,2,2,0,1,6.38596292520859,1.92,PASS
+SCN-04,Wet-road warning case,WARNING,2,2,0,1,9.53216043090321,2.16,PASS
+SCN-05,Sudden stationary obstacle,EMERGENCY_BRAKE,3,3,1,1,10.6120822374079,0.9,PASS
+SCN-06,Delay-sensitive wet case,WARNING,2,2,0,1,9.53216043090321,3.168,PASS

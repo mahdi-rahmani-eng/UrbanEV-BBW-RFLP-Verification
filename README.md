@@ -578,3 +578,22 @@ This confirms that the concept-level model detects the emergency braking case an
 Detailed documentation is available in:
 
 `docs/15_simulink_verification_model.md`
+
+
+## Simulink Testing and Validation
+
+A scenario-based Simulink testing and validation step was added to strengthen the verification evidence.
+
+The test-validation model is:
+
+`models/urban_ev_bbw_warning_logic_test_validation.slx`
+
+The test results are saved in:
+
+`results/simulink_test_validation_results.csv`
+
+Detailed documentation is available in:
+
+`docs/16_simulink_testing_validation.md`
+
+The testing evaluates the scenario catalogue from SCN-01 to SCN-06 and checks whether the actual warning-state output matches the expected warning state for each scenario.
