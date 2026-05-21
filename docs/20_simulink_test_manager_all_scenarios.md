@@ -24,7 +24,7 @@ Emergency Brake-Request Logic Verification - All Scenarios
 | SCN-06 Delay-sensitive wet case | WARNING | Verify delay-sensitive wet-road warning behaviour |
 
 ## Test Manager Result
-The all-scenarios Test Manager suite was executed successfully. The Test Manager result panel showed 6 successful test results.
+The all-scenarios Test Manager suite was executed successfully. The Test Manager result panel showed 6 successful scenario tests.
 
 ## Interpretation
 The official Simulink Test Manager execution confirms that the model can be tested across the full scenario catalogue. The results provide stronger evidence that the warning-state and brake-request logic behaves consistently with the expected scenario outcomes.
