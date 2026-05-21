@@ -619,3 +619,16 @@ A before/after testing summary was added to explain how the project improved aft
 Documentation:
 
 `docs/18_before_after_simulink_testing_phase.md`
+
+
+## Simulink Test Manager Result
+
+An official Simulink Test Manager test case was added for SCN-05: Sudden Stationary Obstacle.
+
+Test Manager file:
+
+`UrbanEV_BBW_Simulink_Test_Manager.mldatx`
+
+Documentation:
+
+`docs/19_simulink_test_manager_result.md`
