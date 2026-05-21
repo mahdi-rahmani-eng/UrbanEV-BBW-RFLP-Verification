@@ -541,3 +541,40 @@ To avoid confusion and provide a clear reading order, a documentation index is p
 This index explains the recommended order for reviewing the project documents, including Black Box Analysis, ODD definition, concept generation, scenario taxonomy, STPA-Lite safety analysis, robustness analysis, traceability, coverage metrics, and demo guidance.
 
 The index is only an organizational guide and does not introduce additional industrial claims.
+
+
+## Simulink Verification Model
+
+A presentation-ready Simulink model was added for concept-level verification of the emergency brake-request logic.
+
+Model file:
+
+`models/urban_ev_bbw_warning_logic_final_presentation.slx`
+
+Model figure:
+
+`figures/simulink_presentation_model.png`
+
+The model follows five subsystems:
+
+1. Scenario Definition
+2. Risk Estimation
+3. Warning and Brake Decision
+4. Requirement Verification
+5. Results and Logging
+
+For the default SCN-05 sudden stationary obstacle scenario, the model produces:
+
+| Output | Result |
+|---|---:|
+| stopping_distance_m | 10.6121 m |
+| ttc_s | 0.9000 s |
+| warning_state_code | 3 |
+| brake_request | 1 |
+| state_match | 1 |
+
+This confirms that the concept-level model detects the emergency braking case and passes the expected-state verification.
+
+Detailed documentation is available in:
+
+`docs/15_simulink_verification_model.md`
