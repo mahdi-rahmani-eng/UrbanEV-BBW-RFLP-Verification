@@ -669,3 +669,14 @@ Documentation:
 `docs/22_alignment_with_course_mandatory_contents.md`
 
 This document explains how the project covers needs, black-box analysis, requirements, concept selection, white-box analysis, traceability, testing and validation, Test Manager results, and before/after testing reflection.
+
+
+## Final Presentation Narrative
+
+A final presentation narrative was added to explain the project according to the course mandatory-content workflow.
+
+Documentation:
+
+`docs/23_final_presentation_narrative.md`
+
+This document provides a structured explanation from needs and black-box analysis to white-box analysis, Simulink verification, Test Manager results, and final scope limitations.
