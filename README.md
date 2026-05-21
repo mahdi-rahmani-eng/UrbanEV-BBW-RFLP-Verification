@@ -610,3 +610,12 @@ Traceability result file:
 Detailed documentation:
 
 `docs/17_simulink_requirement_test_traceability.md`
+
+
+## Before and After Simulink Testing Phase
+
+A before/after testing summary was added to explain how the project improved after adding scenario-based Simulink testing and validation.
+
+Documentation:
+
+`docs/18_before_after_simulink_testing_phase.md`
