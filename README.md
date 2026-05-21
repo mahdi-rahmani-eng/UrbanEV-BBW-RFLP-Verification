@@ -647,3 +647,14 @@ Documentation:
 `docs/20_simulink_test_manager_all_scenarios.md`
 
 The Test Manager result showed 6 successful scenario tests, covering SAFE, CAUTION, WARNING, and EMERGENCY_BRAKE behaviour.
+
+
+## Requirements Not Fully Tested - Justification
+
+A justification document was added for requirements and engineering aspects that are outside the current concept-level testing scope.
+
+Documentation:
+
+`docs/21_requirements_not_fully_tested_justification.md`
+
+This keeps the project scope-safe by distinguishing between tested concept-level logic and non-claimed production-level validation.
