@@ -632,3 +632,18 @@ Test Manager file:
 Documentation:
 
 `docs/19_simulink_test_manager_result.md`
+
+
+## Simulink Test Manager Results - All Scenarios
+
+An official Simulink Test Manager suite was added for all six scenario-based tests from SCN-01 to SCN-06.
+
+Test Manager file:
+
+`UrbanEV_BBW_All_Scenarios_Test_Manager_v2.mldatx`
+
+Documentation:
+
+`docs/20_simulink_test_manager_all_scenarios.md`
+
+The Test Manager result showed 6 successful scenario tests, covering SAFE, CAUTION, WARNING, and EMERGENCY_BRAKE behaviour.
