@@ -658,3 +658,14 @@ Documentation:
 `docs/21_requirements_not_fully_tested_justification.md`
 
 This keeps the project scope-safe by distinguishing between tested concept-level logic and non-claimed production-level validation.
+
+
+## Alignment with Course Mandatory Contents
+
+A final alignment matrix was added to map the project structure to the course mandatory-content example.
+
+Documentation:
+
+`docs/22_alignment_with_course_mandatory_contents.md`
+
+This document explains how the project covers needs, black-box analysis, requirements, concept selection, white-box analysis, traceability, testing and validation, Test Manager results, and before/after testing reflection.
