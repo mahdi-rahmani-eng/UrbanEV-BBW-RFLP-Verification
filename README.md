@@ -597,3 +597,16 @@ Detailed documentation is available in:
 `docs/16_simulink_testing_validation.md`
 
 The testing evaluates the scenario catalogue from SCN-01 to SCN-06 and checks whether the actual warning-state output matches the expected warning state for each scenario.
+
+
+## Simulink Requirement-to-Test Traceability
+
+A Simulink requirement-to-test traceability table was added to connect each scenario-based test to its verification objective and related model subsystem.
+
+Traceability result file:
+
+`results/simulink_requirement_test_traceability.csv`
+
+Detailed documentation:
+
+`docs/17_simulink_requirement_test_traceability.md`

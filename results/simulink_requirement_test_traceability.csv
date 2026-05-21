@@ -1,0 +1,7 @@
+test_id,scenario_id,scenario_description,verification_objective,related_simulink_subsystem,test_rationale,test_result,actual_warning_state_code,expected_warning_state,brake_request
+TEST-SIM-01,SCN-01,Normal following,SAFE-state classification,Warning and Brake Decision,Checks that the model remains SAFE in a non-critical following scenario,PASS,0,SAFE,0
+TEST-SIM-02,SCN-02,Close but not critical target,CAUTION-state classification,Warning and Brake Decision,Checks that the model identifies early risk without emergency braking,PASS,1,CAUTION,0
+TEST-SIM-03,SCN-03,High closing risk,WARNING-state classification,Warning and Brake Decision,Checks that the model escalates to WARNING under high closing risk,PASS,2,WARNING,0
+TEST-SIM-04,SCN-04,Wet-road warning case,Wet-road risk classification,Risk Estimation / Warning Decision,Checks that reduced friction affects stopping-distance-based risk,PASS,2,WARNING,0
+TEST-SIM-05,SCN-05,Sudden stationary obstacle,EMERGENCY_BRAKE classification and brake request,Warning and Brake Decision / Requirement Verification,Checks that the model activates brake_request in emergency conditions,PASS,3,EMERGENCY_BRAKE,1
+TEST-SIM-06,SCN-06,Delay-sensitive wet case,Delay-sensitive warning classification,Risk Estimation / Warning Decision,Checks that wet-road and delay-sensitive conditions are classified correctly,PASS,2,WARNING,0
