@@ -813,3 +813,12 @@ A final guide was added to explain exactly which files and models should be show
 Documentation:
 
 `docs/34_what_to_show_during_presentation.md`
+
+
+## 10-Minute Pre-Presentation Checklist
+
+A final 10-minute pre-presentation checklist was added to make sure the repository, Simulink models, test results, Test Manager files, and key presentation messages are ready before the oral presentation.
+
+Documentation:
+
+`docs/35_ten_minute_pre_presentation_checklist.md`
