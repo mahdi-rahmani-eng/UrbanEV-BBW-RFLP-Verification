@@ -700,3 +700,12 @@ A final slide-by-slide presentation plan was added to explain the project accord
 Documentation:
 
 `docs/25_final_presentation_slide_plan.md`
+
+
+## Final Presentation Speaker Script
+
+A final speaker script was added to support the oral presentation of the project.
+
+Documentation:
+
+`docs/26_final_presentation_speaker_script.md`
