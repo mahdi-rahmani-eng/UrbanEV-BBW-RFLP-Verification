@@ -749,3 +749,16 @@ Documentation:
 Audit result:
 
 `results/final_repository_quality_audit.csv`
+
+
+## Final Reproducibility Check
+
+A final reproducibility check was added to confirm that the main scenario catalogue, Simulink models, Test Manager files, test results, warning-state coverage, and traceability evidence are present and consistent.
+
+Documentation:
+
+`docs/31_final_reproducibility_check.md`
+
+Result file:
+
+`results/final_reproducibility_check.csv`

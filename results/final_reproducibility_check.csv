@@ -1,0 +1,8 @@
+check_item,status,details
+Scenario catalogue exists,PASS,"data/scenarios.csv found"
+Simulink validation model exists,PASS,"Simulink test-validation model found"
+All-scenarios Test Manager file exists,PASS,"All-scenarios Test Manager file found"
+Scenario-based test results exist,PASS,"Scenario-based test results found with 6 rows"
+All scenario CSV tests pass,PASS,"All scenario-based CSV tests are PASS"
+Warning-state coverage exists,PASS,"SAFE, CAUTION, WARNING, and EMERGENCY_BRAKE are covered"
+Requirement-to-test traceability exists,PASS,"Requirement-to-test traceability file found"
