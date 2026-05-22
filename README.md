@@ -1,5 +1,29 @@
 # UrbanEV-BBW-RFLP-Verification
 
+## Final Project Navigation
+
+This repository is organized as a lightweight MBSE/RFLP and MATLAB/Simulink verification project for concept-level emergency brake-request logic in a low-speed urban EV.
+
+### Recommended Evaluation Path
+
+| Step | What to Review | Main File / Evidence |
+|---|---|---|
+| 1 | Project overview and scope | `README.md` |
+| 2 | Requirements and scenarios | `data/requirements.csv`, `data/scenarios.csv` |
+| 3 | MATLAB verification workflow | `matlab/run_all.m` |
+| 4 | Presentation-ready Simulink model | `models/urban_ev_bbw_warning_logic_final_presentation.slx` |
+| 5 | Simulink testing model | `models/urban_ev_bbw_warning_logic_test_validation.slx` |
+| 6 | Scenario-based test results | `results/simulink_test_validation_results.csv` |
+| 7 | Requirement-to-test traceability | `results/simulink_requirement_test_traceability.csv` |
+| 8 | Official Simulink Test Manager suite | `UrbanEV_BBW_All_Scenarios_Test_Manager_v2.mldatx` |
+| 9 | Course workflow alignment | `docs/22_alignment_with_course_mandatory_contents.md` |
+| 10 | Final presentation support | `docs/25_final_presentation_slide_plan.md`, `docs/26_final_presentation_speaker_script.md` |
+
+### Final Claim
+
+This project demonstrates a concept-level MBSE/RFLP and MATLAB/Simulink verification workflow. It does not claim production brake-by-wire validation, certified safety compliance, real sensor fusion, HIL/SIL validation, or ISO 26262 compliance.
+
+
 ## Lightweight MBSE/RFLP Concept Design and MATLAB-Based Verification of Concept-Level Brake-by-Wire Emergency Brake-Request Logic for a Low-Speed Urban EV
 
 This project develops a university-level lightweight MBSE/RFLP workflow for a low-speed urban EV.
