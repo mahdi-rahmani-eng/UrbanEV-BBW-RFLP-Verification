@@ -871,3 +871,20 @@ Data files:
 - `data/operating_modes.csv`
 - `data/services_provided_by_system.csv`
 - `data/stakeholder_needs_requirements.csv`
+
+
+## Black Box Mandatory Diagrams
+
+Formal Black Box diagrams were added for lifecycle, system context, external interfaces, operating modes, and services/use-case representation.
+
+Documentation:
+
+`docs/40_black_box_mandatory_diagrams.md`
+
+Figures:
+
+- `figures/lifecycle_diagram.png`
+- `figures/system_context_diagram.png`
+- `figures/external_interface_diagram.png`
+- `figures/operating_modes_diagram.png`
+- `figures/services_use_case_diagram.png`
