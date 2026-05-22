@@ -840,3 +840,16 @@ A final live-demo sequence was added to guide the oral presentation and show the
 Documentation:
 
 `docs/37_final_live_demo_sequence.md`
+
+
+## Mandatory Content Gap Closure
+
+A mandatory-content gap closure matrix was added to align the project with the course example workflow.
+
+Documentation:
+
+`docs/38_mandatory_content_gap_closure_matrix.md`
+
+Result file:
+
+`results/mandatory_content_gap_closure_matrix.csv`
