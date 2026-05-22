@@ -680,3 +680,14 @@ Documentation:
 `docs/23_final_presentation_narrative.md`
 
 This document provides a structured explanation from needs and black-box analysis to white-box analysis, Simulink verification, Test Manager results, and final scope limitations.
+
+
+## Final Submission Checklist
+
+A final submission checklist was added to help navigate the main project artifacts prepared for presentation and evaluation.
+
+Documentation:
+
+`docs/24_final_submission_checklist.md`
+
+This checklist maps the main project files to the course workflow, including needs, black-box analysis, requirements, concept selection, white-box analysis, Simulink modeling, testing and validation, Test Manager results, traceability, and scope limitations.
