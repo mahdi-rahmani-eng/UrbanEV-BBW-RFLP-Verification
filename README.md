@@ -831,3 +831,12 @@ A final project completion report was added to summarize the completed MBSE/RFLP
 Documentation:
 
 `docs/36_final_project_completion_report.md`
+
+
+## Final Live Demo Sequence
+
+A final live-demo sequence was added to guide the oral presentation and show the project artifacts in the correct order.
+
+Documentation:
+
+`docs/37_final_live_demo_sequence.md`
