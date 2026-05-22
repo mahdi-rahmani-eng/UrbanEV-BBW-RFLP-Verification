@@ -691,3 +691,12 @@ Documentation:
 `docs/24_final_submission_checklist.md`
 
 This checklist maps the main project files to the course workflow, including needs, black-box analysis, requirements, concept selection, white-box analysis, Simulink modeling, testing and validation, Test Manager results, traceability, and scope limitations.
+
+
+## Final Presentation Slide Plan
+
+A final slide-by-slide presentation plan was added to explain the project according to the course mandatory-content workflow.
+
+Documentation:
+
+`docs/25_final_presentation_slide_plan.md`
