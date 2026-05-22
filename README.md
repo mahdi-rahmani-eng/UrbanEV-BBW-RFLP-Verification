@@ -718,3 +718,12 @@ A short 3-minute presentation summary was added for quickly explaining the proje
 Documentation:
 
 `docs/27_three_minute_presentation_summary.md`
+
+
+## 30-Second Elevator Pitch
+
+A 30-second elevator pitch was added for quickly explaining the project during oral presentation or Q&A.
+
+Documentation:
+
+`docs/28_thirty_second_elevator_pitch.md`
