@@ -804,3 +804,12 @@ A final self-assessment document was added to summarize the project's alignment 
 Documentation:
 
 `docs/33_final_project_score_and_remaining_gaps.md`
+
+
+## What to Show During Presentation
+
+A final guide was added to explain exactly which files and models should be shown during the oral presentation and in what order.
+
+Documentation:
+
+`docs/34_what_to_show_during_presentation.md`
