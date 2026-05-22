@@ -1,0 +1,7 @@
+need_id,stakeholder_need,derived_requirement_intent,evidence_file
+NEED-01,The concept should support safer low-speed urban driving.,"Define low-speed urban EV scope and emergency brake-request objective.",README.md
+NEED-02,The warning/brake-request decision should be explainable.,"Use transparent stopping-distance and TTC logic.",matlab models and Simulink Risk Estimation subsystem
+NEED-03,The model should react to forward-risk scenarios.,"Define warning states and emergency brake-request rule.",Simulink Warning and Brake Decision subsystem
+NEED-04,The project should be testable with defined scenarios.,"Create scenario catalogue and expected outputs.",data/scenarios.csv and results/simulink_test_validation_results.csv
+NEED-05,The project should be traceable from requirements to tests.,"Link requirements, functions, logical blocks, physical concepts, and tests.",results/simulink_requirement_test_traceability.csv
+NEED-06,The project should avoid overclaiming production-level safety validation.,"Document limitations such as no real hardware, no sensor fusion, and no ISO 26262 claim.",docs/21_requirements_not_fully_tested_justification.md

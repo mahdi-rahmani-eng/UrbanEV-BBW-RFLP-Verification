@@ -1,0 +1,6 @@
+mode_id,mode_name,mode_code,mode_description,trigger_logic
+MODE-01,SAFE,0,Forward risk is low and no brake request is generated.,Target distance and TTC remain above risk thresholds.
+MODE-02,CAUTION,1,Forward risk is increasing and the model indicates early caution.,Target distance or TTC enters caution region.
+MODE-03,WARNING,2,Forward risk is high and the model indicates warning.,Target distance or TTC enters warning region.
+MODE-04,EMERGENCY_BRAKE,3,Forward risk is critical and the model generates emergency brake request.,Target distance or TTC enters critical emergency region.
+MODE-05,VERIFICATION,N/A,Model output is compared with expected scenario output for PASS/FAIL evidence.,Scenario expected state is compared with actual warning_state_code.

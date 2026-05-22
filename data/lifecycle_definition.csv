@@ -1,0 +1,8 @@
+phase_id,lifecycle_phase,purpose,main_output
+LC-01,"Needs and mission definition","Define why the concept-level emergency brake-request logic is needed.","Project need and scope"
+LC-02,"Black-box system definition","Define system boundary, inputs, outputs, actors, interfaces, operating modes, and services.","Black-box package"
+LC-03,"Concept generation and screening","Compare alternative vehicle and actuator concepts before selecting the working concept.","Concept screening and scoring results"
+LC-04,"White-box functional decomposition","Decompose the system into internal functions, logical blocks, and verification blocks.","Functional architecture and RFLP mapping"
+LC-05,"MATLAB and Simulink modelling","Implement the concept-level logic using MATLAB calculations and Simulink subsystems.","Executable MATLAB and Simulink models"
+LC-06,"Scenario-based verification and Test Manager execution","Run scenario-based tests and collect PASS/FAIL evidence.","Scenario results, Test Manager evidence, and traceability"
+LC-07,"Presentation, documentation, and scope limitation","Prepare final documentation and clearly state what the project does and does not claim.","Final presentation package and limitations"

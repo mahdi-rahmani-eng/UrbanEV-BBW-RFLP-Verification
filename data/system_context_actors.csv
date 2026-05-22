@@ -1,0 +1,7 @@
+actor_id,actor_name,role_in_context,interaction_with_system
+ACT-01,Driver,"Receives warnings and benefits from emergency brake-request logic.","Receives warning state and brake-request interpretation."
+ACT-02,Low-speed urban EV,"Represents the vehicle platform where the concept-level logic is applied.","Provides ego speed and receives logical emergency brake request."
+ACT-03,Forward target or obstacle,"Represents the object used to evaluate forward risk.","Provides target distance and relative speed scenario values."
+ACT-04,Road environment,"Provides friction and operating condition assumptions.","Provides road friction coefficient and dry/wet condition."
+ACT-05,Course evaluator,"Assesses whether the project follows the mandatory course workflow.","Reviews requirements, architecture, tests, and limitations."
+ACT-06,GitHub reviewer,"Reviews repository structure, reproducibility, results, and documentation.","Reviews README, data, models, results, figures, and docs."

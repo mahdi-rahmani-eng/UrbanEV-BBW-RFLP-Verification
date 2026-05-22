@@ -1,0 +1,6 @@
+service_id,service_name,service_description,related_output
+SERV-01,Receive scenario inputs,"The model receives speed, distance, relative speed, road friction, actuator delay, and expected state.","Scenario input signals"
+SERV-02,Estimate forward risk,"The model computes stopping distance and time-to-collision.","stopping_distance_m, ttc_s"
+SERV-03,Classify warning state,"The model converts risk indicators into SAFE, CAUTION, WARNING, or EMERGENCY_BRAKE.","warning_state_code"
+SERV-04,Generate emergency brake request,"The model outputs brake_request = 1 only when the state is EMERGENCY_BRAKE.","brake_request"
+SERV-05,Verify and log result,"The model compares actual and expected states and saves verification evidence.","state_match and test_result"

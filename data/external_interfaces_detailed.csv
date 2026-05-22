@@ -1,0 +1,9 @@
+interface_id,interface_name,interface_direction,source_or_destination,description
+IF-01,ego_speed_kmh,Input,Scenario definition,"Ego vehicle speed used to estimate stopping distance."
+IF-02,target_distance_m,Input,Scenario definition,"Distance between ego vehicle and forward target or obstacle."
+IF-03,relative_speed_kmh,Input,Scenario definition,"Closing speed used to estimate time-to-collision."
+IF-04,friction_mu,Input,Road environment assumption,"Road friction coefficient used in simplified braking-distance calculation."
+IF-05,actuator_delay_s,Input,Actuator concept assumption,"Concept-level delay used to represent brake-request actuation delay."
+IF-06,warning_state_code,Output,Warning state machine / driver-HMI concept,"Discrete warning-state output: 0 SAFE, 1 CAUTION, 2 WARNING, 3 EMERGENCY_BRAKE."
+IF-07,brake_request,Output,Emergency brake-request logic / BBW ECU concept,"Binary emergency brake request. It becomes 1 only in EMERGENCY_BRAKE state."
+IF-08,state_match,Output,Requirement verification manager,"Verification output. It becomes 1 when actual state matches expected scenario state."

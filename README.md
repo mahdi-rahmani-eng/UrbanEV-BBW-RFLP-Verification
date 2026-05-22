@@ -853,3 +853,21 @@ Documentation:
 Result file:
 
 `results/mandatory_content_gap_closure_matrix.csv`
+
+
+## Black Box Mandatory Package
+
+A formal Black Box package was added to align the project with the mandatory workflow. It includes lifecycle definition, system context actors, external interfaces, operating modes, services, and stakeholder needs-to-requirements mapping.
+
+Documentation:
+
+`docs/39_black_box_mandatory_package.md`
+
+Data files:
+
+- `data/lifecycle_definition.csv`
+- `data/system_context_actors.csv`
+- `data/external_interfaces_detailed.csv`
+- `data/operating_modes.csv`
+- `data/services_provided_by_system.csv`
+- `data/stakeholder_needs_requirements.csv`
