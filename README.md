@@ -888,3 +888,18 @@ Figures:
 - `figures/external_interface_diagram.png`
 - `figures/operating_modes_diagram.png`
 - `figures/services_use_case_diagram.png`
+
+
+## Concept Generation, Screening, and Scoring
+
+A mandatory-style concept generation, screening, and scoring package was added. It documents vehicle-level and actuator-level alternatives, compares brake actuator candidates using a + / 0 / - screening matrix, and selects the preferred concept using a weighted scoring matrix.
+
+Documentation:
+
+`docs/41_concept_generation_screening_scoring_mandatory.md`
+
+Data files:
+
+- `data/concept_generation_mandatory.csv`
+- `data/actuator_concept_screening_matrix.csv`
+- `data/actuator_concept_scoring_matrix.csv`

@@ -1,0 +1,7 @@
+concept_id,concept_area,alternative_name,description,role_in_project,selection_status
+C1,Vehicle-level concept,Lightweight low-speed urban EV,"A lightweight concept with lower mass and simpler energy demand.",Used as an alternative in vehicle concept comparison.,Alternative
+C2,Vehicle-level concept,Balanced low-speed urban EV,"A balanced concept used as the main working reference for the project.",Selected as the main reference concept for the lightweight MBSE/RFLP workflow.,Selected vehicle concept
+C3,Vehicle-level concept,Higher-mass low-speed urban EV,"A heavier concept with higher performance demand and larger braking burden.",Used as an alternative in vehicle concept comparison.,Alternative
+A1,Brake actuator concept,Electric linear brake actuator,"A simple electrically commanded actuator candidate for concept-level brake-request representation.",Candidate physical solution for brake-request actuation.,Selected actuator concept for concept-level representation
+A2,Brake actuator concept,Electro-hydraulic brake actuator,"A more realistic brake-by-wire candidate, but more complex for university-level implementation.",Candidate physical solution for brake-request actuation.,Alternative
+A3,Brake actuator concept,Pure hydraulic brake actuator,"A conventional hydraulic candidate with weaker alignment to the electronic brake-request logic.",Candidate physical solution for brake-request actuation.,Alternative

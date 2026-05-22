@@ -1,0 +1,4 @@
+candidate_id,candidate_name,control_compatibility_score,response_delay_suitability_score,implementation_simplicity_score,physical_plausibility_score,traceability_to_simulink_score,weighted_total_score,rank_values,scoring_decision
+A1,Electric linear brake actuator,5,4,5,3,5,4.5,1,Selected
+A2,Electro-hydraulic brake actuator,4,5,3,5,4,4.15,2,Alternative
+A3,Pure hydraulic brake actuator,2,3,2,4,2,2.5,3,Not selected
