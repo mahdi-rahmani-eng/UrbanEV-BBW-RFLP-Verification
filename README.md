@@ -762,3 +762,12 @@ Documentation:
 Result file:
 
 `results/final_reproducibility_check.csv`
+
+
+## Final How-to-Run and Evaluation Guide
+
+A final how-to-run and evaluation guide was added to help reviewers open, run, inspect, and evaluate the project.
+
+Documentation:
+
+`docs/32_final_how_to_run_and_evaluate.md`
