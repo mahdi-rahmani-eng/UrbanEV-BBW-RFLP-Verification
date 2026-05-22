@@ -903,3 +903,22 @@ Data files:
 - `data/concept_generation_mandatory.csv`
 - `data/actuator_concept_screening_matrix.csv`
 - `data/actuator_concept_scoring_matrix.csv`
+
+
+## Concept Screening and Scoring Figures
+
+Presentation-ready concept generation, screening, and scoring figures were added to support the mandatory concept-design workflow.
+
+Documentation:
+
+`docs/42_concept_generation_screening_scoring_figures.md`
+
+Figures:
+
+- `figures/concept_generation_summary.png`
+- `figures/actuator_concept_screening_matrix.png`
+- `figures/actuator_concept_scoring_matrix.png`
+
+Regeneration script:
+
+`matlab/build_concept_figures_no_functions.m`
