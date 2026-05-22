@@ -795,3 +795,12 @@ A final how-to-run and evaluation guide was added to help reviewers open, run, i
 Documentation:
 
 `docs/32_final_how_to_run_and_evaluate.md`
+
+
+## Final Project Score and Remaining Gaps
+
+A final self-assessment document was added to summarize the project's alignment with the course mandatory-content workflow, its current level, and its remaining scope-safe gaps.
+
+Documentation:
+
+`docs/33_final_project_score_and_remaining_gaps.md`
