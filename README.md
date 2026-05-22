@@ -709,3 +709,12 @@ A final speaker script was added to support the oral presentation of the project
 Documentation:
 
 `docs/26_final_presentation_speaker_script.md`
+
+
+## 3-Minute Presentation Summary
+
+A short 3-minute presentation summary was added for quickly explaining the project during oral presentation or Q&A.
+
+Documentation:
+
+`docs/27_three_minute_presentation_summary.md`
