@@ -1,0 +1,5 @@
+check_area,main_metric,value,status
+Course alignment audit,Missing mandatory items,0,PASS
+Repository quality check,Missing required repository items,0,PASS
+Scope / overclaim audit,Unnegated overclaim items,0,PASS
+README link check,Missing README references,0,PASS
