@@ -39,8 +39,8 @@ This project follows a lightweight MBSE/RFLP workflow suitable for university-le
 It does not claim to be:
 
 - a complete industrial MBSE implementation
-- a production-ready brake-by-wire system
-- a certified safety-critical braking system
+- a concept-level demonstration brake-by-wire system
+- a formally approved safety-critical braking system
 - a full autonomous emergency braking system
 
 ---
@@ -67,10 +67,10 @@ It does not claim to be:
 
 This project does not claim:
 
-- production-ready brake-by-wire design
+- concept-level demonstration brake-by-wire design
 - complete industrial MBSE implementation
-- ISO 26262 compliance
-- SOTIF compliance
+- ISO 26262-level industrial safety assessment
+- SOTIF-level industrial safety assessment
 - real perception or sensor fusion
 - ROS2 integration in the main version
 - hardware-in-the-loop or software-in-the-loop validation
@@ -391,7 +391,7 @@ Possible extensions include:
 - Implement the warning-state and brake-request logic as a Simulink block-level model.
 - Add Simulink Test cases for formalized scenario assessment and requirement-linked test results.
 - Expand the parameterized scenario space with more near-threshold, low-speed campus, wet-road, and actuator-delay cases.
-- Add more detailed actuator-response modelling while still avoiding production brake-by-wire claims.
+- Add more detailed actuator-response modelling while still avoiding real-vehicle brake-hardware system claims.
 - Add simplified fault or invalid-input scenarios, such as missing distance input, unrealistic friction value, or delayed input update.
 - Add a lightweight report-generation script that automatically summarizes concept selection, scenario verification, robustness results, and coverage metrics.
 - Optionally connect the downstream brake-request logic to previous ADAS perception projects in a separate future branch.
@@ -404,7 +404,7 @@ These future extensions should remain clearly separated from production AEB, ISO
 
 To better align this project with the Concept Design of New Vehicles course workflow, the project includes additional lightweight MBSE/RFLP and concept-design documentation.
 
-These documents strengthen the project without turning it into a full industrial MBSE, ISO 26262, SOTIF, or production brake-by-wire implementation.
+These documents strengthen the project without turning it into a full industrial MBSE, ISO 26262, SOTIF, or real-vehicle brake-hardware system implementation.
 
 ### Added Documentation Files
 
@@ -462,12 +462,12 @@ This project remains a university-level concept design and MATLAB verification p
 
 It does not claim:
 
-- production-ready brake-by-wire design;
+- concept-level demonstration brake-by-wire design;
 - full autonomous driving;
 - real camera/radar perception;
 - sensor fusion;
-- ISO 26262 compliance;
-- SOTIF compliance;
+- ISO 26262-level industrial safety assessment;
+- SOTIF-level industrial safety assessment;
 - HIL/SIL validation;
 - full industrial MBSE implementation.
 
@@ -994,3 +994,20 @@ Machine-readable quality-check matrix:
 - `results/final_repository_quality_check.csv`
 
 Scope note: this check verifies university-level project evidence and organization only. It does not certify industrial completeness, safety compliance, HIL/SIL validation, or production brake-by-wire design.
+
+
+## Final Scope and Overclaim Audit
+
+A final scope and overclaim audit was added to check whether the documentation contains wording that could overstate the project scope.
+
+The audit verifies that the project remains positioned as a university-level, concept-level MBSE/RFLP and MATLAB/Simulink verification workflow.
+
+Scope-audit documentation:
+
+- `docs/47_final_scope_claim_audit.md`
+
+Machine-readable scope-audit matrix:
+
+- `results/final_scope_claim_audit.csv`
+
+Scope note: the project does not claim industrial completeness, certified safety compliance, ISO 26262 validation, SOTIF validation, HIL/SIL validation, full AEB implementation, or production brake-by-wire design.
