@@ -1,0 +1,31 @@
+path,category,exists,status,action_needed
+README.md,Root,1,OK,No action needed.
+.gitignore,Root,1,OK,No action needed.
+data/requirements.csv,Data,1,OK,No action needed.
+data/scenarios.csv,Data,1,OK,No action needed.
+data/white_box_functional_decomposition.csv,Data,1,OK,No action needed.
+data/white_box_logical_architecture.csv,Data,1,OK,No action needed.
+data/white_box_physical_allocation.csv,Data,1,OK,No action needed.
+data/white_box_function_to_simulink_mapping.csv,Data,1,OK,No action needed.
+data/white_box_traceability_matrix.csv,Data,1,OK,No action needed.
+figures/system_context_diagram.png,Figure,1,OK,No action needed.
+figures/external_interface_diagram.png,Figure,1,OK,No action needed.
+figures/services_use_case_diagram.png,Figure,1,OK,No action needed.
+figures/operating_modes_diagram.png,Figure,1,OK,No action needed.
+figures/lifecycle_diagram.png,Figure,1,OK,No action needed.
+figures/concept_generation_summary.png,Figure,1,OK,No action needed.
+figures/actuator_concept_screening_matrix.png,Figure,1,OK,No action needed.
+figures/actuator_concept_scoring_matrix.png,Figure,1,OK,No action needed.
+figures/white_box_functional_decomposition.png,Figure,1,OK,No action needed.
+figures/white_box_logical_architecture.png,Figure,1,OK,No action needed.
+figures/white_box_physical_allocation.png,Figure,1,OK,No action needed.
+figures/white_box_traceability_chain.png,Figure,1,OK,No action needed.
+models/urban_ev_bbw_warning_logic_test_validation.slx,Simulink model,1,OK,No action needed.
+UrbanEV_BBW_All_Scenarios_Test_Manager_v2.mldatx,Test Manager,1,OK,No action needed.
+results/simulink_test_validation_results.csv,Result,1,OK,No action needed.
+results/simulink_requirement_test_traceability.csv,Result,1,OK,No action needed.
+results/mandatory_content_gap_closure_matrix.csv,Result,1,OK,No action needed.
+docs/42_concept_generation_screening_scoring_figures.md,Documentation,1,OK,No action needed.
+docs/43_white_box_decomposition_package.md,Documentation,1,OK,No action needed.
+docs/44_white_box_presentation_figures.md,Documentation,1,OK,No action needed.
+docs/45_final_course_alignment_audit.md,Documentation,1,OK,No action needed.
