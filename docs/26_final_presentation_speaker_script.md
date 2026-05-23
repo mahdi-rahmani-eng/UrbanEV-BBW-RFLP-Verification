@@ -18,7 +18,7 @@ The project focuses on concept-level logic.
 
 It includes requirements, scenarios, MATLAB verification, Simulink functional modeling, and Test Manager execution.
 
-It does not include real sensors, real brake hardware, ISO 26262 certification, HIL testing, or production brake-by-wire validation.
+It does not include real sensors, real brake hardware, ISO 26262 formal approval, HIL testing, or real-vehicle brake-hardware system validation.
 
 ## Slide 4 - Black Box Analysis
 In the black-box view, I treat the system from the outside.
@@ -98,7 +98,7 @@ This prevents the tests from being isolated simulations.
 ## Slide 15 - Requirements Not Fully Tested
 Some engineering aspects were intentionally not tested.
 
-For example, real brake hardware, real sensor fusion, HIL testing, ISO 26262 compliance, and production actuator validation are outside the scope.
+For example, real brake hardware, real sensor fusion, HIL testing, ISO 26262-level industrial safety assessment, and production actuator validation are outside the scope.
 
 This keeps the project realistic and avoids overclaiming.
 

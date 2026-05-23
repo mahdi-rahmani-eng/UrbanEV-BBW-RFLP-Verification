@@ -31,12 +31,12 @@ The analysis covers:
 
 The analysis does not cover:
 
-- production brake-by-wire architecture;
+- real-vehicle brake-hardware system architecture;
 - ECU redundancy;
 - diagnostics;
 - hydraulic backup;
 - ASIL allocation;
-- ISO 26262 safety case;
+- ISO 26262 formal safety argument;
 - SOTIF validation;
 - full STPA control-structure modelling.
 
@@ -158,4 +158,4 @@ It does not claim to be a complete industrial MBSE implementation or a productio
 
 The STPA-Lite analysis improves the project by identifying potential unsafe control actions and linking them to simple safety constraints.
 
-It shows that the brake_request logic is considered from a safety-engineering perspective without expanding the project into industrial functional-safety certification.
+It shows that the brake_request logic is considered from a safety-engineering perspective without expanding the project into industrial functional-safety formal approval.

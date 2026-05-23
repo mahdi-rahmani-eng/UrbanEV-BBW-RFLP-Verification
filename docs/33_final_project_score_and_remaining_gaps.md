@@ -60,7 +60,7 @@ The remaining gaps are not mistakes; they are outside the intended concept-level
 | Full vehicle dynamics model | The project uses simplified stopping-distance logic |
 | Real sensor fusion | Scenario constants are used instead of camera/radar/lidar inputs |
 | HIL/SIL testing | No hardware-in-the-loop or software-in-the-loop bench is included |
-| ISO 26262 compliance | No certified safety lifecycle or safety case is developed |
+| ISO 26262-level industrial safety assessment | No formally approved safety lifecycle or formal safety argument is developed |
 | Production brake-by-wire validation | The output is a logical brake request, not a production actuator command |
 | Real-world road testing | The project is simulation-based only |
 
@@ -72,7 +72,7 @@ The correct final claim is:
 ## Claims to Avoid
 The project should not be described as:
 
-- a production brake-by-wire system
+- a real-vehicle brake-hardware system system
 - a complete autonomous emergency braking system
 - an ISO 26262-compliant safety system
 - a real sensor-fusion system

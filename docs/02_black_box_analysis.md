@@ -89,7 +89,7 @@ The lifecycle is simplified because this project is limited to concept-level mod
 - detailed hydraulic model;
 - real brake-by-wire ECU;
 - redundancy and failure-handling architecture;
-- ISO 26262 or SOTIF compliance;
+- ISO 26262 or SOTIF-level industrial safety assessment;
 - HIL/SIL validation;
 - production AEB functionality.
 

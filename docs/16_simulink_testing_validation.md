@@ -53,4 +53,4 @@ This testing activity is scenario-based and concept-level. It does not represent
 
 ## Requirements Not Fully Tested
 
-The current Simulink testing focuses on warning-state classification and emergency brake-request logic. Requirements related to real sensors, production hardware, actuator physics, fault tolerance, safety certification, and HIL/SIL validation are outside the current project scope and are therefore documented as limitations rather than tested claims.
+The current Simulink testing focuses on warning-state classification and emergency brake-request logic. Requirements related to real sensors, production hardware, actuator physics, fault tolerance, safety formal approval, and HIL/SIL validation are outside the current project scope and are therefore documented as limitations rather than tested claims.

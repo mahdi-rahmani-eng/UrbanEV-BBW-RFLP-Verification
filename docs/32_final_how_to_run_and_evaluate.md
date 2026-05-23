@@ -141,11 +141,11 @@ The project should be presented as:
 ## 11. Scope Limitation
 The project does not claim:
 
-- production brake-by-wire validation
+- real-vehicle brake-hardware system validation
 - real brake actuator hardware testing
 - real sensor fusion
 - HIL/SIL validation
-- ISO 26262 compliance
+- ISO 26262-level industrial safety assessment
 - complete autonomous emergency braking system design
 
 ## Final Evaluation Note

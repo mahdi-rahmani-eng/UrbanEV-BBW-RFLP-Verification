@@ -8,7 +8,7 @@ The main goal is to demonstrate a lightweight MBSE/RFLP workflow for concept-lev
 
 The project connects requirements, scenarios, MATLAB models, Simulink architecture, scenario-based testing, Simulink Test Manager results, and traceability.
 
-## Q2. Is this a production brake-by-wire system?
+## Q2. Is this a real-vehicle brake-hardware system system?
 No. This is not a production brake-by-wire system.
 
 It is a concept-level verification model. The output is a logical brake request, not a real actuator command for production hardware.
@@ -68,7 +68,7 @@ In this scenario, the model should reach EMERGENCY_BRAKE, activate brake_request
 ## Q12. Why are some requirements not fully tested?
 Some engineering aspects are outside the scope of this concept-level project.
 
-For example, real brake hardware, real sensor fusion, HIL/SIL validation, ISO 26262 compliance, and production actuator validation are not included.
+For example, real brake hardware, real sensor fusion, HIL/SIL validation, ISO 26262-level industrial safety assessment, and production actuator validation are not included.
 
 These are documented as limitations to avoid overclaiming.
 
@@ -93,7 +93,7 @@ It connects requirements, scenarios, functional architecture, Simulink model, te
 ## Q17. What is the main limitation?
 The main limitation is that the project remains concept-level.
 
-It does not validate real vehicle hardware or certified safety behaviour.
+It does not validate real vehicle hardware or formally approved safety behaviour.
 
 ## Q18. What is the correct final claim?
 The correct final claim is:

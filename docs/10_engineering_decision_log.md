@@ -55,7 +55,7 @@ TTC adds a time-based risk indicator, which improves the warning logic compared 
 
 The project focuses on emergency brake-request logic, not a production brake-by-wire system.
 
-This keeps the project aligned with concept design and avoids overclaiming real ECU, actuator, redundancy, diagnostics, or safety certification.
+This keeps the project aligned with concept design and avoids overclaiming real ECU, actuator, redundancy, diagnostics, or safety formal approval.
 
 ---
 

@@ -124,7 +124,7 @@ The following areas are not covered:
 
 - real sensor perception;
 - camera/radar fusion;
-- production brake-by-wire actuation;
+- real-vehicle brake-hardware system actuation;
 - hydraulic pressure dynamics;
 - ECU implementation;
 - ISO 26262 verification;

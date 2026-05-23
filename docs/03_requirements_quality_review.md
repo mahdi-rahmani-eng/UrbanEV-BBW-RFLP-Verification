@@ -45,7 +45,7 @@ The following improvements make the requirements more precise and easier to veri
 2. Use *shall* for formal requirements.
 3. Keep each requirement focused on one function or constraint.
 4. Link each requirement to at least one verification method.
-5. Avoid claiming production brake-by-wire, industrial MBSE, ISO 26262, SOTIF, or real actuator validation.
+5. Avoid claiming real-vehicle brake-hardware system, industrial MBSE, ISO 26262, SOTIF, or real actuator validation.
 
 ---
 

@@ -118,7 +118,7 @@ It extends the scenario-based verification by testing small variations around re
 
 This robustness analysis is intentionally lightweight.
 
-It is not a substitute for real-world validation, certified brake-by-wire testing, formal safety assurance, HIL/SIL testing, or production AEB verification.
+It is not a substitute for real-world validation, formally approved real-vehicle brake hardware testing, formal safety assurance, HIL/SIL testing, or production AEB verification.
 
 ---
 

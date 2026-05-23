@@ -24,10 +24,10 @@ Does:
 - Test Manager execution
 
 Does not:
-- production brake-by-wire validation
+- real-vehicle brake-hardware system validation
 - real sensor fusion
 - HIL/SIL validation
-- ISO 26262 compliance
+- ISO 26262-level industrial safety assessment
 
 ## Slide 4 - Black Box Analysis
 Show the external view of the system.
@@ -135,7 +135,7 @@ Not tested:
 - real vehicle dynamics
 - real sensor fusion
 - HIL/SIL
-- ISO 26262 compliance
+- ISO 26262-level industrial safety assessment
 - production brake control
 
 ## Slide 16 - Before and After Testing

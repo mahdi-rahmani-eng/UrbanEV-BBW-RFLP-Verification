@@ -56,9 +56,9 @@ The project does not include:
 
 - real sensor perception;
 - sensor fusion;
-- production brake-by-wire design;
-- ISO 26262 compliance;
-- SOTIF compliance;
+- real-vehicle brake-hardware system design;
+- ISO 26262-level industrial safety assessment;
+- SOTIF-level industrial safety assessment;
 - HIL/SIL validation;
 - full autonomous emergency braking.
 

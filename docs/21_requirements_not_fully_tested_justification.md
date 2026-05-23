@@ -40,4 +40,4 @@ The correct claim for this project is:
 
 `Concept-level MBSE/RFLP and MATLAB/Simulink verification of emergency brake-request logic for a low-speed urban EV.`
 
-The project should not be presented as a production brake-by-wire system, certified safety system, complete AEB system, or hardware-validated autonomous driving function.
+The project should not be presented as a real-vehicle brake-hardware system system, formally approved safety system, complete emergency-braking product stack system, or hardware-validated autonomous driving function.

@@ -57,7 +57,7 @@ A requirement is classified as:
 
 This is a lightweight metric based on the CSV traceability structure.
 
-It is not a formal requirements-management tool or certified verification report.
+It is not a formal requirements-management tool or formally approved verification report.
 
 ---
 
@@ -109,7 +109,7 @@ The coverage metrics should be interpreted inside the project scope:
 - ODD-constrained scenario testing;
 - lightweight MBSE/RFLP traceability.
 
-The metrics do not imply production readiness or certified safety validation.
+The metrics do not imply production readiness or formally approved safety validation.
 
 ---
 

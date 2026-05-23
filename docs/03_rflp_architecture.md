@@ -142,7 +142,7 @@ The project does NOT include:
 - Hydraulic dynamics
 - ECU implementation
 - Redundancy handling
-- ISO 26262 compliance
+- ISO 26262-level industrial safety assessment
 - Real sensor fusion
 - Real autonomous driving stack
-- Production-ready brake-by-wire implementation
+- concept-level demonstration brake-by-wire implementation

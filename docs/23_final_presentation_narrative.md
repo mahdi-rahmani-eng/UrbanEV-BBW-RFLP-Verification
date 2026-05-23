@@ -6,7 +6,7 @@ This document provides a presentation-ready narrative for explaining the UrbanEV
 ## 1. Starting from Needs
 The project starts from the need to verify a concept-level emergency brake-request logic for a low-speed urban electric vehicle.
 
-The goal is not to design a production brake-by-wire system, but to show a requirements-driven MBSE/RFLP workflow supported by MATLAB and Simulink verification.
+The goal is not to design a real-vehicle brake-hardware system system, but to show a requirements-driven MBSE/RFLP workflow supported by MATLAB and Simulink verification.
 
 ## 2. Black Box Analysis
 In the black-box stage, the system is treated from the outside. The main focus is to define the system boundary, operating scenario, inputs, outputs, and requirements.
@@ -70,7 +70,7 @@ The project also includes a requirement-to-test traceability table.
 This links each scenario-based test to its verification objective and related Simulink subsystem.
 
 ## 10. Requirements Not Fully Tested
-Some engineering aspects were intentionally not tested, including real brake-by-wire hardware, real sensor fusion, HIL/SIL testing, ISO 26262 compliance, and production actuator validation.
+Some engineering aspects were intentionally not tested, including real brake-by-wire hardware, real sensor fusion, HIL/SIL testing, ISO 26262-level industrial safety assessment, and production actuator validation.
 
 These are outside the concept-level scope and are documented as limitations.
 

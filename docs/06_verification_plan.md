@@ -81,7 +81,7 @@ Expected output files include:
 
 This verification plan is script-based and concept-level.
 
-It is not a substitute for industrial validation, certified brake-by-wire verification, Simulink Test execution, HIL/SIL testing, or functional-safety assessment.
+It is not a substitute for industrial validation, formally approved real-vehicle brake hardware verification, Simulink Test execution, HIL/SIL testing, or functional-safety assessment.
 
 ---
 

@@ -19,10 +19,10 @@ This project includes:
 
 This project does not claim:
 
-- Production-ready brake-by-wire design
+- concept-level demonstration brake-by-wire design
 - Complete industrial MBSE implementation
-- ISO 26262 compliance
-- SOTIF compliance
+- ISO 26262-level industrial safety assessment
+- SOTIF-level industrial safety assessment
 - Real perception or sensor fusion
 - ROS2 integration in the main version
 - Hardware-in-the-loop or software-in-the-loop validation
