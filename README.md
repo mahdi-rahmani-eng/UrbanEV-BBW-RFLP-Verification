@@ -291,7 +291,7 @@ Current generated results:
 
 ```text
 Selected concept: C2
-Selected actuator: A2
+Selected actuator: A1
 All scenario verification checks: Pass
 Brake request is generated only in SCN-05
 ```
@@ -299,7 +299,7 @@ Brake request is generated only in SCN-05
 Selected actuator:
 
 ```text
-A2 — Electro-hydraulic brake actuator
+A1 — Electric linear brake actuator
 ```
 
 The actuator is selected only as a concept-level physical candidate, not as a detailed production actuator design.
