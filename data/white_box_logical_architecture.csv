@@ -1,0 +1,7 @@
+logical_block_id,logical_block_name,allocated_functions,logical_responsibility
+L-01,Scenario Input Interface,"F-01, F-02","Receives and structures scenario-level inputs."
+L-02,Risk Estimation Logic,"F-03, F-04","Computes stopping-distance and time-to-collision indicators."
+L-03,Warning State Logic,"F-05","Converts risk indicators into warning-state levels."
+L-04,Brake Request Logic,"F-06","Converts critical warning conditions into emergency brake-request output."
+L-05,Requirement Verification Logic,"F-07","Checks expected warning state, brake request, and state-match result."
+L-06,Results and Logging Logic,"F-07","Stores scenario verification outputs as project evidence."

@@ -1,0 +1,8 @@
+function_id,function_name,function_purpose,black_box_service
+F-01,Receive scenario inputs,"Receive ego speed, target distance, relative speed, road friction, and actuator delay.",SERV-01
+F-02,Normalize driving scenario data,"Prepare scenario variables for the concept-level verification model.",SERV-01
+F-03,Estimate stopping distance,"Estimate whether the vehicle can stop safely under the given road and delay assumptions.",SERV-02
+F-04,Estimate time-to-collision,"Estimate collision urgency using distance and closing-speed information.",SERV-02
+F-05,Classify warning state,"Classify the situation into SAFE, CAUTION, WARNING, or EMERGENCY BRAKE.",SERV-03
+F-06,Generate emergency brake request,"Generate a binary brake-request output when the risk condition becomes critical.",SERV-04
+F-07,Verify and log scenario result,"Compare actual outputs with expected scenario outputs and store verification evidence.",SERV-05

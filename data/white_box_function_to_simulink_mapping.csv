@@ -1,0 +1,8 @@
+function_id,simulink_model,simulink_implementation_area,verification_evidence
+F-01,urban_ev_bbw_warning_logic_test_validation.slx,Input ports / scenario parameter injection,data/scenarios.csv
+F-02,urban_ev_bbw_warning_logic_test_validation.slx,Scenario parameter assignment,data/scenarios.csv
+F-03,urban_ev_bbw_warning_logic_test_validation.slx,Stopping-distance calculation logic,results/simulink_test_validation_results.csv
+F-04,urban_ev_bbw_warning_logic_test_validation.slx,TTC calculation logic,results/simulink_test_validation_results.csv
+F-05,urban_ev_bbw_warning_logic_test_validation.slx,Warning-state decision logic,results/simulink_test_validation_results.csv
+F-06,urban_ev_bbw_warning_logic_test_validation.slx,Brake-request decision logic,results/simulink_test_validation_results.csv
+F-07,UrbanEV_BBW_All_Scenarios_Test_Manager_v2.mldatx,Test Manager criteria and result logging,results/simulink_test_validation_results.csv

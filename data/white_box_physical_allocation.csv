@@ -1,0 +1,7 @@
+physical_element_id,physical_element_name,allocated_logical_blocks,physical_role,scope_note
+P-01,Low-speed urban EV platform,"L-01","Provides the vehicle-level context for the concept verification.",Concept-level only
+P-02,Concept-level BBW controller,"L-02, L-03, L-04","Represents the controller logic used to estimate risk and generate brake request.",Concept-level controller logic
+P-03,Electric linear brake actuator,"L-04","Represents the selected concept-level physical actuation candidate.",Not a production actuator design
+P-04,Wheel-speed / ego-speed source,"L-01","Provides ego-speed input for the scenario model.",Scenario-level assumption
+P-05,Forward target / obstacle assumption,"L-01","Provides target distance and relative-speed assumptions.",Scenario-level assumption
+P-06,Verification computer and MATLAB/Simulink environment,"L-05, L-06","Runs the model, Test Manager suite, and evidence-generation scripts.",Verification evidence environment

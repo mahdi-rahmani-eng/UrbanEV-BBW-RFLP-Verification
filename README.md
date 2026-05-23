@@ -922,3 +922,34 @@ Figures:
 Regeneration script:
 
 `matlab/build_concept_figures_no_functions.m`
+
+
+## White Box Decomposition Package
+
+The project includes a White Box decomposition package that opens the black-box emergency brake-request logic and maps it through internal functions, logical blocks, physical allocation elements, Simulink/Test Manager assets, and verification evidence.
+
+Documentation:
+
+- `docs/43_white_box_decomposition_package.md`
+- `docs/44_white_box_presentation_figures.md`
+
+White Box CSV artifacts:
+
+- `data/white_box_functional_decomposition.csv`
+- `data/white_box_logical_architecture.csv`
+- `data/white_box_physical_allocation.csv`
+- `data/white_box_function_to_simulink_mapping.csv`
+- `data/white_box_traceability_matrix.csv`
+
+White Box figures:
+
+- `figures/white_box_functional_decomposition.png`
+- `figures/white_box_logical_architecture.png`
+- `figures/white_box_physical_allocation.png`
+- `figures/white_box_traceability_chain.png`
+
+Regeneration scripts:
+
+- `matlab/build_white_box_figures_no_functions.m`
+- `matlab/build_white_box_functional_decomposition_final.m`
+- `matlab/build_white_box_physical_allocation_final.m`

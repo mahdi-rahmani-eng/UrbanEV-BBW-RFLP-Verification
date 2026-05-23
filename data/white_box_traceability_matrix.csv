@@ -1,0 +1,8 @@
+trace_id,requirement_id,function_id,logical_block_id,physical_element_id,verification_scenario,evidence_file
+WB-T01,REQ-BBW-01,F-01,L-01,"P-04, P-05","SCN-01 to SCN-06",data/scenarios.csv
+WB-T02,REQ-BBW-02,F-03,L-02,"P-02","SCN-01 to SCN-06",results/simulink_test_validation_results.csv
+WB-T03,REQ-BBW-03,F-04,L-02,"P-02","SCN-01 to SCN-06",results/simulink_test_validation_results.csv
+WB-T04,REQ-BBW-04,F-05,L-03,"P-02","SCN-01 to SCN-06",results/simulink_test_validation_results.csv
+WB-T05,REQ-BBW-05,F-06,L-04,"P-02, P-03","SCN-03, SCN-05, SCN-06",results/simulink_test_validation_results.csv
+WB-T06,REQ-BBW-06,F-07,L-05,"P-06","SCN-01 to SCN-06",UrbanEV_BBW_All_Scenarios_Test_Manager_v2.mldatx
+WB-T07,REQ-BBW-07,F-07,L-06,"P-06","SCN-01 to SCN-06",results/simulink_test_validation_results.csv
