@@ -953,3 +953,29 @@ Regeneration scripts:
 - `matlab/build_white_box_figures_no_functions.m`
 - `matlab/build_white_box_functional_decomposition_final.m`
 - `matlab/build_white_box_physical_allocation_final.m`
+
+
+## Final Course Alignment Audit
+
+A final course-alignment audit was added to check whether the project contains evidence for the main mandatory concept-design and systems-engineering contents.
+
+The audit covers:
+
+- project overview, need, mission, and scope
+- requirements and scenarios
+- Black Box context, interfaces, services, and operating modes
+- concept generation, screening, and scoring
+- White Box functional decomposition, logical architecture, physical allocation, and traceability
+- MATLAB / Simulink implementation evidence
+- Simulink Test Manager evidence
+- final documentation and presentation support
+
+Audit documentation:
+
+- `docs/45_final_course_alignment_audit.md`
+
+Machine-readable audit matrix:
+
+- `results/mandatory_content_gap_closure_matrix.csv`
+
+Scope note: the audit checks university-level project evidence only. It does not claim industrial completeness, certified safety compliance, ISO 26262 validation, SOTIF validation, HIL/SIL testing, or production brake-by-wire design.
