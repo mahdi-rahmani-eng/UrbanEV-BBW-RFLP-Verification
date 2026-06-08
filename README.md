@@ -762,19 +762,6 @@ Documentation:
 `docs/29_final_presentation_q_and_a.md`
 
 
-## Final Repository Quality Audit
-
-A final repository quality audit was added to confirm that the main presentation and evaluation artifacts are present.
-
-Documentation:
-
-`docs/30_final_repository_quality_audit.md`
-
-Audit result:
-
-`results/final_repository_quality_audit.csv`
-
-
 ## Final Reproducibility Check
 
 A final reproducibility check was added to confirm that the main scenario catalogue, Simulink models, Test Manager files, test results, warning-state coverage, and traceability evidence are present and consistent.
@@ -1361,3 +1348,40 @@ All required validation artifacts are available.
 ### Scope Limitation
 
 This script checks file availability only. It does not perform certified validation, ISO 26262 compliance checking, HIL/SIL testing, ECU-level testing, or real-vehicle validation.
+
+
+## Final Repository Quality Audit
+
+This project includes a final repository quality audit that summarizes the current validation evidence structure, documentation completeness, review readiness, and remaining scope limitations.
+
+Main audit file:
+
+- `docs/36_final_repository_quality_audit.md`
+
+### Audit Coverage
+
+| Audit Area | Status |
+|---|---|
+| MATLAB/Simulink model-based workflow | Available |
+| Stateflow warning logic extension | Available |
+| Simulink Test Manager evidence | Available |
+| Requirement-test-result matrix | Available |
+| Automotive signal interface | Available |
+| CAN-style signal mapping | Available |
+| Extended ODD scenario library | Available |
+| ODD coverage summary | Available |
+| Regression test plan | Available |
+| Validation artifacts index | Available |
+| Artifact integrity check script | Available |
+
+### Review Relevance
+
+The final audit helps reviewers quickly understand the repository status, validation evidence structure, documentation quality, and interview/presentation relevance of the project.
+
+### Recommended Positioning
+
+This repository should be presented as a concept-level model-based validation workflow for low-speed urban EV brake-request logic, implemented using MATLAB/Simulink, Stateflow, scenario-based validation, requirement-test-result evidence, and structured validation documentation.
+
+### Scope Limitation
+
+The project remains a university-level concept validation project. It does not claim production brake-by-wire validation, certified ISO 26262 compliance, ASPICE compliance, AUTOSAR compliance, real CAN implementation, HIL/SIL validation, ECU-level deployment, or real vehicle testing.
