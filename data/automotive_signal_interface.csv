@@ -1,0 +1,11 @@
+SignalName,Direction,Unit,DataType,MinValue,MaxValue,Source,Destination,Description
+ego_speed_kmh,Input,km/h,double,0,40,Scenario input,Braking distance estimator,"Ego vehicle speed inside the low-speed urban EV ODD"
+target_distance_m,Input,m,double,0,100,Scenario input,TTC estimator and warning logic,"Longitudinal distance to the target or obstacle"
+relative_speed_mps,Input,m/s,double,0,30,Scenario input,TTC estimator,"Positive closing speed between ego vehicle and target"
+road_friction_mu,Input,-,double,0.2,1,Scenario input,Braking distance estimator,"Simplified road friction coefficient"
+controller_delay_s,Input,s,double,0,1,Scenario input,Braking distance estimator,"Simplified controller processing delay"
+actuator_delay_s,Input,s,double,0,1,Scenario input,Braking distance estimator,"Simplified actuator response delay"
+safe_distance_m,Internal,m,double,0,200,Braking distance estimator,Warning Stateflow Logic,"Estimated stopping or safety distance"
+ttc_s,Internal,s,double,0,99,TTC estimator,Warning Stateflow Logic,"Estimated time-to-collision"
+warning_state_uint8,Output,-,uint8,0,3,Warning Stateflow Logic,Verification output,"0=SAFE, 1=CAUTION, 2=WARNING, 3=EMERGENCY_BRAKE"
+brake_request,Output,-,boolean,0,1,Warning Stateflow Logic,Verification output,"Boolean emergency brake request generated only in EMERGENCY_BRAKE"
