@@ -1412,3 +1412,32 @@ The document helps explain the project in academic, portfolio, and entry-level a
 ### Scope Limitation
 
 The talking-points document avoids claims of production readiness, ISO 26262 compliance, ASPICE compliance, AUTOSAR compliance, HIL/SIL validation, ECU deployment, real CAN implementation, or real-vehicle testing.
+
+
+## Reviewer Quick Start Guide
+
+This repository includes a reviewer quick start guide to help professors, reviewers, recruiters, or interviewers quickly understand the project structure and validation value.
+
+Main file:
+
+- `docs/38_reviewer_quick_start_guide.md`
+
+### Purpose
+
+The guide explains which files should be reviewed first depending on the available review time.
+
+### Review Paths
+
+| Review Time | Recommended Files |
+|---|---|
+| 5 minutes | README, validation artifacts index, final quality audit, portfolio talking points |
+| 15 minutes | Stateflow logic, validation evidence summary, CAN-style mapping, ODD coverage, regression test plan |
+| Full technical review | Simulink models, Test Manager file, CSV evidence files, scenario libraries, and validation check results |
+
+### Why It Matters
+
+The guide makes the repository easier to review because it gives a clear reading order and explains the role of each important validation artifact.
+
+### Scope Note
+
+The guide clearly states that the repository is a university-level concept validation project and does not claim production brake-by-wire validation, ISO 26262 compliance, ASPICE compliance, AUTOSAR compliance, HIL/SIL validation, ECU deployment, real CAN implementation, or real vehicle testing.
