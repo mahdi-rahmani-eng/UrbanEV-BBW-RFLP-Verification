@@ -1099,3 +1099,41 @@ For the tested SCN-05 sudden stationary obstacle scenario, the Stateflow chart p
 ### Scope limitation
 
 This Stateflow extension is a university-level model-based validation extension. It does not claim production brake-by-wire validation, ISO 26262 compliance, HIL/SIL validation, or real-vehicle testing.
+
+
+## Requirements-Based Validation Evidence
+
+This project includes a lightweight requirements-based and scenario-based validation evidence layer.
+
+The purpose of this extension is to make the validation workflow clearer by linking requirements, scenarios, test methods, observed results, and evidence files.
+
+### Evidence Chain
+
+`Requirement → Scenario → Test Method → Observed Result → Evidence File`
+
+### Main Evidence Files
+
+| File | Purpose |
+|---|---|
+| `data/requirement_test_result_matrix.csv` | Links requirements to scenarios, test methods, observed results, and validation status. |
+| `docs/30_validation_evidence_summary.md` | Summarizes the project validation evidence in a readable report format. |
+| `UrbanEV_BBW_All_Scenarios_Test_Manager_v2.mldatx` | Simulink Test Manager suite for scenario-based validation. |
+| `models/urban_ev_bbw_warning_logic_stateflow_validation.slx` | Stateflow-based parallel validation model. |
+| `docs/28_stateflow_warning_logic.md` | Documentation of the Stateflow warning-state logic. |
+| `data/automotive_signal_interface.csv` | Automotive-style signal interface definition. |
+
+### Validation Coverage Summary
+
+| Requirement Area | Scenario Coverage | Result |
+|---|---|---|
+| Stopping-distance estimation | SCN-01 to SCN-06 | Pass |
+| Time-to-collision estimation | SCN-01 to SCN-06 | Pass |
+| Warning-state classification | SCN-01 to SCN-06 | Pass |
+| Emergency brake-request generation | SCN-05 | Pass |
+| Wet-road behavior | SCN-04, SCN-06 | Pass |
+| Delay-sensitive behavior | SCN-06 | Pass |
+| Stateflow-to-Simulink equivalence | SCN-05 | Pass |
+
+### Scope Limitation
+
+This evidence layer is intended for a university-level model-based verification project. It does not claim production brake-by-wire validation, ISO 26262 compliance, ASPICE compliance, HIL/SIL validation, ECU-level validation, or real-vehicle testing.
