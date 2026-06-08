@@ -1137,3 +1137,30 @@ The purpose of this extension is to make the validation workflow clearer by link
 ### Scope Limitation
 
 This evidence layer is intended for a university-level model-based verification project. It does not claim production brake-by-wire validation, ISO 26262 compliance, ASPICE compliance, HIL/SIL validation, ECU-level validation, or real-vehicle testing.
+
+
+## Future Industrial Extension Roadmap
+
+This project includes a roadmap describing possible future extensions that could move the current university-level validation workflow closer to an industrial automotive validation process.
+
+The roadmap is documented in:
+
+- `docs/31_future_industrial_extension_roadmap.md`
+
+### Main Future Extension Areas
+
+| Extension Area | Purpose |
+|---|---|
+| HIL testing | Validate logic under more realistic timing and hardware conditions. |
+| SIL testing | Move toward ECU-oriented software validation. |
+| CAN signal mapping | Improve automotive interface realism. |
+| AUTOSAR-oriented architecture | Prepare the project for automotive software architecture discussion. |
+| Functional safety analysis | Add hazard analysis, safety goals, and ISO 26262-oriented reasoning without claiming compliance. |
+| ASPICE-oriented traceability | Improve requirement-to-test-to-result traceability. |
+| Test automation | Improve repeatability and regression testing. |
+| Extended ODD coverage | Add more speed, distance, friction, and delay combinations. |
+| Sensor and actuator modeling | Improve realism of the validation environment. |
+
+### Scope Limitation
+
+This roadmap describes possible future work only. The current project does not claim production brake-by-wire validation, ISO 26262 compliance, ASPICE compliance, AUTOSAR compliance, HIL/SIL validation, ECU-level validation, or real-vehicle testing.
