@@ -1441,3 +1441,35 @@ The guide makes the repository easier to review because it gives a clear reading
 ### Scope Note
 
 The guide clearly states that the repository is a university-level concept validation project and does not claim production brake-by-wire validation, ISO 26262 compliance, ASPICE compliance, AUTOSAR compliance, HIL/SIL validation, ECU deployment, real CAN implementation, or real vehicle testing.
+
+
+## Demo Walkthrough Guide
+
+This repository includes a demo walkthrough guide to support a clear and professional presentation of the project during portfolio reviews, academic discussions, or entry-level automotive validation interviews.
+
+Main file:
+
+- `docs/39_demo_walkthrough_guide.md`
+
+### Purpose
+
+The guide explains the recommended order for presenting the repository, starting from the README and moving through the validation artifacts, Simulink models, Stateflow logic, evidence files, ODD coverage, regression plan, and final audit documents.
+
+### Demo Flow
+
+| Step | File or Area | Purpose |
+|---|---|---|
+| 1 | README | Introduce the repository and project scope. |
+| 2 | Validation artifacts index | Show the full artifact map. |
+| 3 | Main Simulink model | Explain the brake-request validation logic. |
+| 4 | Stateflow validation model | Explain the finite-state warning logic. |
+| 5 | Requirement-test-result evidence | Show traceability between requirements, tests, and results. |
+| 6 | Signal interface and CAN-style mapping | Explain conceptual automotive signal organization. |
+| 7 | ODD scenario library and coverage | Show scenario expansion and coverage thinking. |
+| 8 | Regression test plan | Show repeatability after model changes. |
+| 9 | Artifact integrity check | Show repository completeness checking. |
+| 10 | Final audit and talking points | Close with safe project positioning. |
+
+### Scope Note
+
+The demo guide clearly states that this repository is a university-level concept validation project. It does not claim production brake-by-wire validation, ISO 26262 compliance, ASPICE compliance, AUTOSAR compliance, HIL/SIL validation, ECU deployment, real CAN implementation, or real vehicle testing.
