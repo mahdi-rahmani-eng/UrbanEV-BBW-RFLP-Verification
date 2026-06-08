@@ -1325,3 +1325,39 @@ The index helps reviewers, instructors, and recruiters quickly understand the va
 ### Scope Limitation
 
 The indexed artifacts support a university-level concept validation workflow. They do not claim production brake-by-wire validation, certified ISO 26262 compliance, ASPICE compliance, AUTOSAR compliance, real CAN implementation, HIL/SIL validation, ECU-level deployment, or real-vehicle testing.
+
+
+## Validation Artifact Integrity Check
+
+This project includes a MATLAB script that checks whether the main validation artifacts are available in the repository.
+
+Main script:
+
+- `matlab/check_validation_artifacts.m`
+
+Generated check result:
+
+- `results/validation_artifacts_check.csv`
+
+### Purpose
+
+The artifact check script helps reviewers verify that the key validation files, documentation files, scenario files, interface files, and evidence files are present in the repository.
+
+### How to Run
+
+```matlab
+cd("C:\Users\USER\Desktop\github\UrbanEV_BBW_FRESH")
+run("matlab/check_validation_artifacts.m")
+```
+
+### Expected Result
+
+If all validation artifacts are available, MATLAB prints:
+
+```text
+All required validation artifacts are available.
+```
+
+### Scope Limitation
+
+This script checks file availability only. It does not perform certified validation, ISO 26262 compliance checking, HIL/SIL testing, ECU-level testing, or real-vehicle validation.
