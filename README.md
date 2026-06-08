@@ -1193,3 +1193,36 @@ The mapping is not a real CAN implementation and does not claim ECU deployment o
 ### Scope Limitation
 
 This CAN-style mapping is a conceptual interface artifact only. It does not claim real CAN bus implementation, DBC generation, ECU software deployment, AUTOSAR compliance, ISO 26262 compliance, HIL validation, or vehicle-level integration.
+
+
+## Extended ODD Scenario Library
+
+This project includes an extended Operational Design Domain (ODD) scenario library for scalable scenario-based validation.
+
+The library defines additional low-speed urban EV scenarios using speed, target distance, relative speed, road friction, controller delay, actuator delay, target type, expected warning state, and expected brake-request output.
+
+### Main Files
+
+| File | Purpose |
+|---|---|
+| `data/extended_odd_scenario_library.csv` | Defines additional parameterized ODD scenarios for future validation expansion. |
+| `docs/33_extended_odd_scenario_library.md` | Documents the scenario parameters, scenario groups, validation relevance, and scope limitation. |
+
+### Scenario Categories
+
+| Scenario Group | Purpose |
+|---|---|
+| Low-speed urban dry-road cases | Baseline SAFE, CAUTION, and WARNING behavior. |
+| Low-speed urban wet-road cases | Reduced-friction behavior and emergency brake-request activation. |
+| Delay-sensitive cases | Controller and actuator delay sensitivity. |
+| Stationary obstacle cases | Close and critical obstacle conditions. |
+
+### Validation Relevance
+
+The extended ODD scenario library helps move the project from a small fixed scenario set toward a more scalable scenario-based validation workflow.
+
+It can support future work such as automated scenario generation, parameter sweep testing, regression testing, ODD coverage analysis, and Simulink Test Manager test-case expansion.
+
+### Scope Limitation
+
+This scenario library is a concept-level validation artifact. It does not claim real-world autonomous driving validation, production AEB validation, certified ODD coverage, HIL/SIL validation, ISO 26262 compliance, or real vehicle testing.

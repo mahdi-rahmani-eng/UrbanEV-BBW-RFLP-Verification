@@ -1,0 +1,11 @@
+ScenarioID,ODDZone,EgoSpeed_kmh,TargetDistance_m,RelativeSpeed_mps,RoadFriction_mu,ControllerDelay_s,ActuatorDelay_s,TargetType,ExpectedWarningState,ExpectedBrakeRequest,Purpose
+EXT-ODD-01,Low-speed urban dry road,10,30,2,0.8,0.05,0.1,Moving target,SAFE,0,Baseline safe low-speed dry-road case
+EXT-ODD-02,Low-speed urban dry road,20,25,4,0.8,0.05,0.1,Moving target,CAUTION,0,Early warning dry-road case
+EXT-ODD-03,Low-speed urban dry road,30,20,6,0.8,0.05,0.1,Moving target,WARNING,0,High-risk dry-road case
+EXT-ODD-04,Low-speed urban wet road,10,25,2,0.45,0.05,0.15,Moving target,CAUTION,0,Wet-road caution case
+EXT-ODD-05,Low-speed urban wet road,20,18,4,0.45,0.05,0.15,Moving target,WARNING,0,Wet-road warning case
+EXT-ODD-06,Low-speed urban wet road,30,15,6,0.45,0.05,0.15,Moving target,EMERGENCY_BRAKE,1,Wet-road emergency brake-request case
+EXT-ODD-07,Delay-sensitive dry road,25,18,5,0.8,0.2,0.3,Moving target,WARNING,0,Controller and actuator delay sensitivity case
+EXT-ODD-08,Delay-sensitive wet road,25,15,5,0.45,0.2,0.3,Moving target,EMERGENCY_BRAKE,1,Wet-road delay-sensitive emergency case
+EXT-ODD-09,Close stationary obstacle,20,10,6,0.8,0.1,0.2,Stationary obstacle,EMERGENCY_BRAKE,1,Close stationary obstacle case
+EXT-ODD-10,Critical stationary obstacle,30,8,8,0.45,0.2,0.3,Stationary obstacle,EMERGENCY_BRAKE,1,Critical stationary obstacle case
