@@ -1259,3 +1259,39 @@ The ODD coverage summary helps make the scenario library easier to review, exten
 ### Scope Limitation
 
 This ODD coverage summary is a concept-level validation artifact. It does not claim certified ODD coverage, production AEB validation, real-world autonomous driving validation, ISO 26262 compliance, HIL/SIL validation, ECU-level validation, or real vehicle testing.
+
+
+## Regression Test Plan
+
+This project includes a concept-level regression test plan to make the validation workflow more repeatable after future model updates.
+
+The purpose of the regression plan is to define which scenario groups should be re-tested after changes to braking-distance logic, TTC calculation, warning thresholds, brake-request logic, Stateflow logic, or the extended ODD scenario library.
+
+### Main Files
+
+| File | Purpose |
+|---|---|
+| `data/regression_test_plan.csv` | Defines regression test groups, linked scenarios, trigger conditions, expected results, evidence files, priorities, and status. |
+| `docs/35_regression_test_plan.md` | Documents the regression testing rationale, trigger conditions, evidence files, and scope limitation. |
+
+### Regression Test Groups
+
+| Test Group | Purpose | Priority |
+|---|---|---|
+| Baseline dry-road tests | Re-check normal dry-road behavior after changes to braking distance, TTC, or warning thresholds. | High |
+| Wet-road tests | Re-check reduced-friction behavior and wet-road emergency cases. | High |
+| Delay-sensitive tests | Re-check controller and actuator delay sensitivity. | Medium |
+| Stationary obstacle tests | Re-check close and critical stationary obstacle behavior. | High |
+| Emergency brake-request tests | Re-check that `brake_request` is active only in emergency cases. | High |
+| Stateflow equivalence tests | Re-check that Stateflow logic still matches the original Simulink decision logic. | High |
+| ODD coverage review | Re-check consistency between the extended scenario library and ODD coverage summary. | Medium |
+
+### Validation Relevance
+
+The regression test plan supports a more repeatable validation workflow by identifying which tests should be re-run after specific model or scenario-library changes.
+
+It also connects the project to an automotive V&V mindset, where model updates should be followed by structured re-testing rather than one-time validation only.
+
+### Scope Limitation
+
+This regression test plan is a concept-level validation planning artifact. It does not claim certified regression testing, production brake-by-wire validation, HIL/SIL validation, ECU-level validation, ISO 26262 compliance, ASPICE compliance, or real vehicle testing.
