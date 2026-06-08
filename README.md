@@ -1295,3 +1295,33 @@ It also connects the project to an automotive V&V mindset, where model updates s
 ### Scope Limitation
 
 This regression test plan is a concept-level validation planning artifact. It does not claim certified regression testing, production brake-by-wire validation, HIL/SIL validation, ECU-level validation, ISO 26262 compliance, ASPICE compliance, or real vehicle testing.
+
+
+## Validation Artifacts Index
+
+This project includes a centralized validation artifacts index to make the repository easier to review.
+
+The index groups the main model files, Stateflow validation evidence, requirements-based validation evidence, automotive interface artifacts, ODD scenario artifacts, regression test plan, and future industrial extension roadmap.
+
+Main index file:
+
+- `docs/00_validation_artifacts_index.md`
+
+### Indexed Artifact Groups
+
+| Artifact Group | Main Purpose |
+|---|---|
+| Core validation models | Simulink and Stateflow model-based validation files. |
+| Stateflow validation evidence | Stateflow-to-Simulink equivalence documentation. |
+| Requirements-based validation evidence | Requirement-to-scenario-to-result traceability. |
+| Automotive interface artifacts | Signal interface and CAN-style mapping definitions. |
+| ODD and scenario expansion artifacts | Extended ODD scenario library and coverage summary. |
+| Regression and future extension artifacts | Regression test plan and future industrial roadmap. |
+
+### Review Relevance
+
+The index helps reviewers, instructors, and recruiters quickly understand the validation evidence structure of the repository without searching through all folders manually.
+
+### Scope Limitation
+
+The indexed artifacts support a university-level concept validation workflow. They do not claim production brake-by-wire validation, certified ISO 26262 compliance, ASPICE compliance, AUTOSAR compliance, real CAN implementation, HIL/SIL validation, ECU-level deployment, or real-vehicle testing.
