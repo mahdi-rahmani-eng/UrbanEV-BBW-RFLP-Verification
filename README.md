@@ -1385,3 +1385,30 @@ This repository should be presented as a concept-level model-based validation wo
 ### Scope Limitation
 
 The project remains a university-level concept validation project. It does not claim production brake-by-wire validation, certified ISO 26262 compliance, ASPICE compliance, AUTOSAR compliance, real CAN implementation, HIL/SIL validation, ECU-level deployment, or real vehicle testing.
+
+
+## Portfolio and Interview Talking Points
+
+This project includes a dedicated portfolio and interview talking-points document to support clear, professional, and scope-safe project presentation.
+
+Main file:
+
+- `docs/37_portfolio_interview_talking_points.md`
+
+### Purpose
+
+The document helps explain the project in academic, portfolio, and entry-level automotive validation interview contexts without overstating the industrial maturity of the work.
+
+### Main Talking-Point Areas
+
+| Area | Purpose |
+|---|---|
+| Short project pitch | Explains the project in a concise portfolio-friendly way. |
+| One-minute explanation | Provides a simple verbal explanation for interviews or presentations. |
+| Key technical points | Summarizes MATLAB/Simulink, Stateflow, scenario validation, traceability, ODD, and regression testing. |
+| Safe positioning | Clarifies that the project is a concept-level validation workflow, not a production brake-by-wire system. |
+| Interview Q&A | Provides concise answers to likely questions about the project. |
+
+### Scope Limitation
+
+The talking-points document avoids claims of production readiness, ISO 26262 compliance, ASPICE compliance, AUTOSAR compliance, HIL/SIL validation, ECU deployment, real CAN implementation, or real-vehicle testing.
