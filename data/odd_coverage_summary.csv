@@ -1,0 +1,12 @@
+CoverageArea,CoveredScenarios,ScenarioCount,ValidationPurpose,Status
+Dry-road scenarios,"EXT-ODD-01, EXT-ODD-02, EXT-ODD-03, EXT-ODD-07, EXT-ODD-09",5,"Covers dry-road baseline, caution, warning, and delay/obstacle cases",Covered
+Wet-road scenarios,"EXT-ODD-04, EXT-ODD-05, EXT-ODD-06, EXT-ODD-08, EXT-ODD-10",5,"Covers reduced-friction wet-road warning and emergency behavior",Covered
+Delay-sensitive scenarios,"EXT-ODD-07, EXT-ODD-08, EXT-ODD-09, EXT-ODD-10",4,"Covers controller and actuator delay sensitivity",Covered
+Stationary obstacle scenarios,"EXT-ODD-09, EXT-ODD-10",2,"Covers close and critical stationary obstacle behavior",Covered
+SAFE expected state,"EXT-ODD-01",1,"Covers non-critical safe behavior",Covered
+CAUTION expected state,"EXT-ODD-02, EXT-ODD-04",2,"Covers early risk warning behavior",Covered
+WARNING expected state,"EXT-ODD-03, EXT-ODD-05, EXT-ODD-07",3,"Covers high-risk warning behavior without brake request",Covered
+EMERGENCY_BRAKE expected state,"EXT-ODD-06, EXT-ODD-08, EXT-ODD-09, EXT-ODD-10",4,"Covers emergency brake-request activation",Covered
+Low-speed 10 km/h cases,"EXT-ODD-01, EXT-ODD-04",2,"Covers very low-speed urban operation",Covered
+Medium-speed 20-25 km/h cases,"EXT-ODD-02, EXT-ODD-05, EXT-ODD-07, EXT-ODD-08, EXT-ODD-09",5,"Covers common low-speed urban operation",Covered
+Higher low-speed 30 km/h cases,"EXT-ODD-03, EXT-ODD-06, EXT-ODD-10",3,"Covers upper range of the defined low-speed ODD",Covered

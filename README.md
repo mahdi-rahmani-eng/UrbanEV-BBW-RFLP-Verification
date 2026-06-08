@@ -1226,3 +1226,36 @@ It can support future work such as automated scenario generation, parameter swee
 ### Scope Limitation
 
 This scenario library is a concept-level validation artifact. It does not claim real-world autonomous driving validation, production AEB validation, certified ODD coverage, HIL/SIL validation, ISO 26262 compliance, or real vehicle testing.
+
+
+## ODD Coverage Summary
+
+This project includes a concept-level Operational Design Domain (ODD) coverage summary for the extended scenario library.
+
+The purpose of this section is to show which road conditions, warning states, speed ranges, delay-sensitive cases, and stationary obstacle cases are covered by the extended scenario set.
+
+### Main Files
+
+| File | Purpose |
+|---|---|
+| `data/odd_coverage_summary.csv` | Summarizes the ODD coverage areas, covered scenarios, scenario counts, validation purposes, and coverage status. |
+| `docs/34_odd_coverage_summary.md` | Documents the ODD coverage interpretation, covered scenario categories, validation relevance, and scope limitation. |
+
+### Covered Areas
+
+| Coverage Area | Purpose |
+|---|---|
+| Dry-road scenarios | Covers baseline, caution, warning, delay-sensitive, and obstacle behavior under dry-road conditions. |
+| Wet-road scenarios | Covers reduced-friction behavior and emergency brake-request activation. |
+| Delay-sensitive scenarios | Covers controller and actuator delay sensitivity. |
+| Stationary obstacle scenarios | Covers close and critical stationary obstacle cases. |
+| SAFE / CAUTION / WARNING / EMERGENCY_BRAKE states | Covers the main warning-state outputs used in the model. |
+| Low-speed 10, 20-25, and 30 km/h cases | Covers the selected low-speed urban EV operating range. |
+
+### Validation Relevance
+
+The ODD coverage summary helps make the scenario library easier to review, extend, and connect to future regression testing or automated Simulink Test Manager case generation.
+
+### Scope Limitation
+
+This ODD coverage summary is a concept-level validation artifact. It does not claim certified ODD coverage, production AEB validation, real-world autonomous driving validation, ISO 26262 compliance, HIL/SIL validation, ECU-level validation, or real vehicle testing.
