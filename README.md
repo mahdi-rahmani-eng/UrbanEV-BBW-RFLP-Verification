@@ -1164,3 +1164,32 @@ The roadmap is documented in:
 ### Scope Limitation
 
 This roadmap describes possible future work only. The current project does not claim production brake-by-wire validation, ISO 26262 compliance, ASPICE compliance, AUTOSAR compliance, HIL/SIL validation, ECU-level validation, or real-vehicle testing.
+
+
+## CAN-Style Signal Mapping
+
+This project includes a conceptual CAN-style signal mapping layer to make the model interface closer to an automotive validation workflow.
+
+The mapping is not a real CAN implementation and does not claim ECU deployment or production vehicle integration.
+
+### Main Files
+
+| File | Purpose |
+|---|---|
+| `data/can_signal_mapping.csv` | Defines CAN-style message names, example CAN IDs, update rates, units, data types, and descriptions for key model signals. |
+| `docs/32_can_signal_mapping.md` | Documents the purpose, signal groups, and scope limitation of the CAN-style mapping layer. |
+
+### Mapped Signal Groups
+
+| CAN-Style Message | Example Signals | Purpose |
+|---|---|---|
+| `VehicleMotionStatus` | `ego_speed_kmh` | Ego vehicle motion input |
+| `ObjectTrackingStatus` | `target_distance_m`, `relative_speed_mps` | Target/object tracking inputs |
+| `RoadConditionEstimate` | `road_friction_mu` | Simplified road condition input |
+| `BrakeSafetyEstimate` | `safe_distance_m` | Internal safe-distance estimate |
+| `CollisionRiskEstimate` | `ttc_s` | Internal time-to-collision estimate |
+| `BrakeWarningCommand` | `warning_state_uint8`, `brake_request` | Warning and emergency brake-request outputs |
+
+### Scope Limitation
+
+This CAN-style mapping is a conceptual interface artifact only. It does not claim real CAN bus implementation, DBC generation, ECU software deployment, AUTOSAR compliance, ISO 26262 compliance, HIL validation, or vehicle-level integration.

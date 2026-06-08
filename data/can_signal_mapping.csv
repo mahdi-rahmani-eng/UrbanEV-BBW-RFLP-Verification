@@ -1,0 +1,9 @@
+SignalName,CANMessageName,Direction,Unit,DataType,ExampleCANID,UpdateRateHz,Description
+ego_speed_kmh,VehicleMotionStatus,Input,km/h,double,0x101,50,"Ego vehicle speed signal used by the brake-request logic"
+target_distance_m,ObjectTrackingStatus,Input,m,double,0x201,20,"Estimated distance to the target or obstacle"
+relative_speed_mps,ObjectTrackingStatus,Input,m/s,double,0x201,20,"Relative closing speed between ego vehicle and target"
+road_friction_mu,RoadConditionEstimate,Input,-,double,0x301,10,"Simplified friction estimate for dry or wet road behavior"
+safe_distance_m,BrakeSafetyEstimate,Internal,m,double,0x401,50,"Computed safe stopping distance"
+ttc_s,CollisionRiskEstimate,Internal,s,double,0x402,50,"Computed time-to-collision"
+warning_state_uint8,BrakeWarningCommand,Output,-,uint8,0x501,50,"Warning state output: 0 SAFE, 1 CAUTION, 2 WARNING, 3 EMERGENCY_BRAKE"
+brake_request,BrakeWarningCommand,Output,-,boolean,0x501,50,"Boolean emergency brake request output"
