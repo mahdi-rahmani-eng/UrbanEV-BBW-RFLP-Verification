@@ -1473,3 +1473,32 @@ The guide explains the recommended order for presenting the repository, starting
 ### Scope Note
 
 The demo guide clearly states that this repository is a university-level concept validation project. It does not claim production brake-by-wire validation, ISO 26262 compliance, ASPICE compliance, AUTOSAR compliance, HIL/SIL validation, ECU deployment, real CAN implementation, or real vehicle testing.
+
+
+## One-Page Project Summary
+
+This repository includes a one-page project summary that presents the project purpose, technical approach, validation structure, skills demonstrated, and scope limitations in a concise portfolio-friendly format.
+
+Main file:
+
+- `docs/40_one_page_project_summary.md`
+
+### Purpose
+
+The one-page summary helps reviewers, professors, recruiters, or interviewers quickly understand the project without reading the full documentation package first.
+
+### Summary Coverage
+
+| Area | Description |
+|---|---|
+| Project title | UrbanEV-BBW-RFLP Verification |
+| Short description | Concept-level model-based validation workflow for low-speed urban EV brake-request logic |
+| Technical approach | MATLAB/Simulink, Stateflow, scenario validation, traceability, ODD, and regression planning |
+| Main model logic | Stopping distance, safe distance, time-to-collision, warning state, and brake request |
+| Validation structure | Simulink model, Stateflow model, Test Manager file, CSV evidence, and documentation |
+| Skills demonstrated | Model-based validation, Stateflow, requirements thinking, signal interface thinking, ODD planning, regression mindset |
+| Scope limitation | University-level concept validation, not a production brake-by-wire implementation |
+
+### Best Portfolio Sentence
+
+> I developed a concept-level model-based validation workflow for low-speed urban EV brake-request logic using MATLAB/Simulink, Stateflow, scenario-based validation, requirement-test-result evidence, ODD coverage, regression planning, and structured technical documentation.
