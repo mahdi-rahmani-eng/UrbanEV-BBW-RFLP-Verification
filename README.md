@@ -1502,3 +1502,34 @@ The one-page summary helps reviewers, professors, recruiters, or interviewers qu
 ### Best Portfolio Sentence
 
 > I developed a concept-level model-based validation workflow for low-speed urban EV brake-request logic using MATLAB/Simulink, Stateflow, scenario-based validation, requirement-test-result evidence, ODD coverage, regression planning, and structured technical documentation.
+
+
+## CV and LinkedIn Project Description
+
+This repository includes a dedicated CV and LinkedIn project-description file to support professional presentation of the project in a resume, LinkedIn profile, cover letter, GitHub portfolio, or interview context.
+
+Main file:
+
+- `docs/41_cv_linkedin_project_description.md`
+
+### Purpose
+
+The document provides scope-safe wording for presenting the project professionally without claiming production-level automotive maturity.
+
+### Included Materials
+
+| Material | Purpose |
+|---|---|
+| CV title | Short professional project title for resume use. |
+| Short CV description | Concise project description for a CV or portfolio. |
+| CV bullet points | Ready-to-use bullet points describing technical contributions. |
+| LinkedIn project summary | Clear project explanation for LinkedIn. |
+| GitHub portfolio description | Short repository-level project summary. |
+| Cover letter sentence | One polished sentence for applications. |
+| Interview sentence | Simple verbal explanation for interviews. |
+| Skills table | Maps project artifacts to demonstrated skills. |
+| Safe scope statement | Clarifies that this is a university-level concept validation project. |
+
+### Scope Note
+
+The wording avoids claims of production readiness, ISO 26262 certification, ASPICE compliance, AUTOSAR compliance, HIL/SIL validation, ECU deployment, real CAN implementation, or real-vehicle testing.
